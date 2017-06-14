@@ -6,11 +6,9 @@
     <description>Recent content in 1 on Academic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2016 Karttikeya Mangalam</copyright>
+    <copyright>&amp;copy; 2016 Your Name</copyright>
     <lastBuildDate>Mon, 01 Jul 2013 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://karttikeya.github.io/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
-    
+    <atom:link href="/publication_types/1/" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Mobile visual clothing search</title>
@@ -18,7 +16,8 @@
       <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       
       <guid>https://karttikeya.github.io/publication/clothing-search/</guid>
-      <description>More detail can easily be written here using Markdown and $\rm \LaTeX$ math code.</description>
+      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
+</description>
     </item>
     
   </channel>
