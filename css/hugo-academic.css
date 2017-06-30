@@ -22,13 +22,13 @@
 
 html {
   font-family: 'Merriweather', serif;
-  font-size: 16px;
+  font-size: 11px;
   color: rgba(0,0,0,0.8);
   line-height: 1.65;
 }
 @media screen and (min-width: 58em) {
   html {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 
@@ -221,7 +221,7 @@ blockquote p:last-child {
 }
 
 .home-section:nth-of-type(even) {
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(240, 240, 247);
 }
 
 @media screen and (max-width: 768px) {
@@ -259,13 +259,13 @@ blockquote p:last-child {
   width: 200px;
   height: 200px;
   margin: 0 auto;
-  border-radius: 50%;
+  border-radius: 25%;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
 }
 
-#profile .portrait-title h2 {
+#profile .portrait-title h225 {
   font-size: 1.75em;
   font-weight: 300;
   color: #000000;
