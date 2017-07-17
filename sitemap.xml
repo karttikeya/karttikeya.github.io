@@ -5,6 +5,24 @@
     
     <url>
     
+      <loc>https://karttikeya.github.io/project/ca-ip/</loc>
+      <lastmod>2017-07-17T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://karttikeya.github.io/project/mme-conv/</loc>
+      <lastmod>2017-07-17T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://karttikeya.github.io/publication/bitwise-operations-of-cellular-automaton-on-grayscale-images/</loc>
       <lastmod>2017-06-18T18:48:06+09:00</lastmod>
     </url>
@@ -25,15 +43,6 @@
     
       <loc>https://karttikeya.github.io/publication/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://karttikeya.github.io/project/deep-learning/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
     </url>
     
   
@@ -69,7 +78,7 @@
     
     <url>
     
-      <loc>https://karttikeya.github.io/tags/deep-learning/</loc>
+      <loc>https://karttikeya.github.io/tags/demo/</loc>
       <lastmod>2016-04-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -79,8 +88,8 @@
     
     <url>
     
-      <loc>https://karttikeya.github.io/tags/demo/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <loc>https://karttikeya.github.io/tags/ip/</loc>
+      <lastmod>2017-07-17T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -99,8 +108,18 @@
     
     <url>
     
+      <loc>https://karttikeya.github.io/tags/ml/</loc>
+      <lastmod>2017-07-17T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://karttikeya.github.io/project/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <lastmod>2017-07-17T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -111,6 +130,16 @@
     
       <loc>https://karttikeya.github.io/publication_types/</loc>
       <lastmod>2017-06-18T18:48:06+09:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://karttikeya.github.io/tags/sp/</loc>
+      <lastmod>2017-07-17T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
