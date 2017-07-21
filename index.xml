@@ -11,6 +11,26 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Hybrid Recommender Systems using feature selection by Markov Blanket</title>
+      <link>https://karttikeya.github.io/project/bg/</link>
+      <pubDate>Fri, 21 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://karttikeya.github.io/project/bg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Automated Modelling for Course Recommendation (C.R.A.M)</title>
+      <link>https://karttikeya.github.io/project/cram/</link>
+      <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://karttikeya.github.io/project/cram/</guid>
+      <description>&lt;p&gt;Developed a Machine Learning based recommendation webapp for IIT Kanpur UG students for institute course selection (aided by additional recommendations for courses on EdX, coursera etc.) and personalised academic template based on research interests,previous internships and courses undertaken. Mined student resumes and CV in public domain for previous 10 years using text analysis for developing a database. Used collaborative filetring and nearest neighbours for recommendation.&lt;br&gt;
+Complete design and implementation in 24 hours and won OVERALL WINNER in Google DevFest 2016. Final Presentation &lt;a href=&#34;https://karttikeya.github.io/cram.pdf&#34; target=&#34;_blank&#34;&gt;slides&lt;/a&gt; and &lt;a href=&#34;https://github.com/shivrai/CRAM&#34; target=&#34;_blank&#34;&gt;code&lt;/a&gt; are public.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Cellular Automata for Image Processing</title>
       <link>https://karttikeya.github.io/project/ca-ip/</link>
       <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
