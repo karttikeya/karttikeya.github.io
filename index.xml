@@ -26,7 +26,7 @@
       
       <guid>https://karttikeya.github.io/project/cram/</guid>
       <description>&lt;p&gt;Developed a Machine Learning based recommendation webapp for IIT Kanpur UG students for institute course selection (aided by additional recommendations for courses on EdX, coursera etc.) and personalised academic template based on research interests,previous internships and courses undertaken. Mined student resumes and CV in public domain for previous 10 years using text analysis for developing a database. Used collaborative filetring and nearest neighbours for recommendation.&lt;br&gt;
-Complete design and implementation in 24 hours and won OVERALL WINNER in Google DevFest 2016. Final Presentation &lt;a href=&#34;https://karttikeya.github.io/cram.pdf&#34; target=&#34;_blank&#34;&gt;slides&lt;/a&gt; and &lt;a href=&#34;https://github.com/shivrai/CRAM&#34; target=&#34;_blank&#34;&gt;code&lt;/a&gt; are public.&lt;/p&gt;
+Complete design and implementation in 24 hours and won OVERALL WINNER in Google DevFest 2016. Final Presentation &lt;a href=&#34;https://karttikeya.github.io/pdf/cram.pdf&#34; target=&#34;_blank&#34;&gt;slides&lt;/a&gt; and &lt;a href=&#34;https://github.com/shivrai/CRAM&#34; target=&#34;_blank&#34;&gt;code&lt;/a&gt; are public.&lt;/p&gt;
 </description>
     </item>
     
@@ -37,6 +37,17 @@ Complete design and implementation in 24 hours and won OVERALL WINNER in Google 
       
       <guid>https://karttikeya.github.io/project/ca-ip/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Emotion Recognition from Static Human facial Images</title>
+      <link>https://karttikeya.github.io/project/emo-recog/</link>
+      <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://karttikeya.github.io/project/emo-recog/</guid>
+      <description>&lt;p&gt;This was our project for &lt;a href=&#34;https://www.cse.iitk.ac.in/users/piyush/courses/ml_autumn16/ML.html&#34; target=&#34;_blank&#34;&gt;CS771A&lt;/a&gt; - Machine Learning Techniques,Fall 2016. We implemented various supervied classifiers such as naive bayes, Kernelized SVMs etc. for emotion classification on human facial Images from the &lt;a href=&#34;https://sites.google.com/site/emotiw2016/&#34; target=&#34;_blank&#34;&gt;Emotion Recognition in the Wild Challenge 2016&lt;/a&gt; dataset. &lt;br&gt;
+ For supervised classifiers, we engineered suitable feature vectors using Google Cloud Vision API and annotated the ground truth in a semi-supervised fashion using Cloud Visio API and human supervision. Futher we compared the performance of traditional classification approaches against results from pre-trained Convolutional Neural Networks in our project&amp;rsquo;s &lt;a href=&#34;https://karttikeya.github.io/pdf/CS771-report.pdf&#34; target=&#34;_blank&#34;&gt;final report&lt;/a&gt;. Also, the slides for the presentation are available &lt;a href=&#34;https://karttikeya.github.io/pdf/CS771-slides.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+</description>
     </item>
     
     <item>

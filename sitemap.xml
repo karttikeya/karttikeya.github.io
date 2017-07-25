@@ -32,6 +32,15 @@
     
     <url>
     
+      <loc>https://karttikeya.github.io/project/emo-recog/</loc>
+      <lastmod>2017-07-17T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://karttikeya.github.io/project/zzcau-diff/</loc>
       <lastmod>2017-07-17T00:00:00+00:00</lastmod>
     </url>
@@ -88,6 +97,16 @@
     <url>
     
       <loc>https://karttikeya.github.io/categories/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://karttikeya.github.io/tags/cv/</loc>
+      <lastmod>2017-07-17T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
