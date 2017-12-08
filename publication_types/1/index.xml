@@ -1,23 +1,31 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>1 on Academic</title>
+    <title>1 on Karttikeya Mangalam</title>
     <link>https://karttikeya.github.io/publication_types/1/</link>
-    <description>Recent content in 1 on Academic</description>
+    <description>Recent content in 1 on Karttikeya Mangalam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Karttikeya Mangalam</copyright>
-    <lastBuildDate>Mon, 01 Jul 2013 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Jun 2017 18:48:06 +0900</lastBuildDate>
     <atom:link href="/publication_types/1/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Mobile visual clothing search</title>
-      <link>https://karttikeya.github.io/publication/clothing-search/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
+      <title>Bitwise Operations of Cellular Automaton on Gray-scale Images</title>
+      <link>https://karttikeya.github.io/publication/bitwise-operations-of-cellular-automaton-on-grayscale-images---copy/</link>
+      <pubDate>Sun, 18 Jun 2017 18:48:06 +0900</pubDate>
       
-      <guid>https://karttikeya.github.io/publication/clothing-search/</guid>
-      <description>&lt;p&gt;More detail can easily be written here using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-</description>
+      <guid>https://karttikeya.github.io/publication/bitwise-operations-of-cellular-automaton-on-grayscale-images---copy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Future Person Localization in First-Person Videos</title>
+      <link>https://karttikeya.github.io/publication/future-localization/</link>
+      <pubDate>Sun, 18 Jun 2017 18:48:06 +0900</pubDate>
+      
+      <guid>https://karttikeya.github.io/publication/future-localization/</guid>
+      <description></description>
     </item>
     
   </channel>
