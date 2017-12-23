@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ri on Karttikeya Mangalam</title>
+    <link>https://karttikeya.github.io/tags/ri/</link>
+    <description>Recent content in Ri on Karttikeya Mangalam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Karttikeya Mangalam</copyright>
+    <lastBuildDate>Mon, 17 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/ri/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Cellular Automata for Image Processing</title>
+      <link>https://karttikeya.github.io/project/ca-ip/</link>
+      <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://karttikeya.github.io/project/ca-ip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Speech based synchrony measuerement in dyadic interaction</title>
+      <link>https://karttikeya.github.io/project/mme-conv/</link>
+      <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://karttikeya.github.io/project/mme-conv/</guid>
+      <description>&lt;p&gt;We aim to develop a measure for engagement/synchrony between two human speakers in a face to face conversation processing vaiorus modalities like audio-visual clues and gestures using emotion recognition and sentiment analysis. We are using the &lt;a href=&#34;http://sail.usc.edu/iemocap/&#34; target=&#34;_blank&#34;&gt;IEMOCAP&lt;/a&gt; database for our research purpose. &lt;br&gt;&lt;/p&gt;
+
+&lt;p&gt;As a baseline model, my work as undergraduate research project for Vth and VIth semester (junior year) focuses using the speech clues for learning the synchrony present in the audio signal between speakers. Discete Time Warping is suggested as a measure for syncrony for speech signals. &lt;br&gt; This preliminary &lt;a href=&#34;https://karttikeya.github.io/pdf/ugp.pdf&#34; target=&#34;_blank&#34;&gt;project report&lt;/a&gt; details our approach and assumptions. This research is still in progress.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
