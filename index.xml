@@ -11,11 +11,20 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Hybrid Recommender Systems using feature selection by Markov Blanket</title>
-      <link>https://karttikeya.github.io/project/bg/</link>
-      <pubDate>Fri, 21 Jul 2017 00:00:00 +0000</pubDate>
+      <title>Future Person Localization in First-Person Videos</title>
+      <link>https://karttikeya.github.io/publication/future-localization/</link>
+      <pubDate>Mon, 18 Jun 2018 18:48:06 +0900</pubDate>
       
-      <guid>https://karttikeya.github.io/project/bg/</guid>
+      <guid>https://karttikeya.github.io/publication/future-localization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Future Person Localization in First-Person Videos</title>
+      <link>https://karttikeya.github.io/project/tokyo/</link>
+      <pubDate>Sun, 07 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://karttikeya.github.io/project/tokyo/</guid>
       <description></description>
     </item>
     
@@ -90,18 +99,18 @@ Complete design and implementation in 24 hours and won OVERALL WINNER in Google 
     </item>
     
     <item>
-      <title>Future Person Localization in First-Person Videos</title>
-      <link>https://karttikeya.github.io/publication/future-localization/</link>
-      <pubDate>Sun, 18 Jun 2017 18:48:06 +0900</pubDate>
+      <title>Hybrid Recommender Systems using feature selection by Markov Blanket</title>
+      <link>https://karttikeya.github.io/project/bg/</link>
+      <pubDate>Sat, 21 Jul 2012 00:00:00 +0000</pubDate>
       
-      <guid>https://karttikeya.github.io/publication/future-localization/</guid>
+      <guid>https://karttikeya.github.io/project/bg/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Learning Spontaneity to Improve Emotion Recognition in Speech</title>
       <link>https://karttikeya.github.io/publication/emotion-spontaneity/</link>
-      <pubDate>Sun, 18 Jun 2017 18:48:06 +0900</pubDate>
+      <pubDate>Sat, 18 Jun 2011 18:48:06 +0900</pubDate>
       
       <guid>https://karttikeya.github.io/publication/emotion-spontaneity/</guid>
       <description></description>
