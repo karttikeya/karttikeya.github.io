@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Karttikeya Mangalam</copyright>
     <lastBuildDate>Sun, 07 Jan 2018 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/cv/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://karttikeya.github.io/tags/cv/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Future Person Localization in First-Person Videos</title>
@@ -25,11 +27,7 @@
       <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>https://karttikeya.github.io/project/epfl/</guid>
-      <description>&lt;p&gt;&lt;img src=&#34;https://sigtuple.com/wp-content/uploads/2017/05/unet.png&#34; alt=&#34;Mountain View&#34;&gt;
-This is my Master&amp;rsquo;s Research project mentored by &lt;a href=&#34;https://people.epfl.ch/mathieu.salzmann&#34; target=&#34;_blank&#34;&gt;Dr. Mathieu Salzmann&lt;/a&gt; at &lt;a href=&#34;https://people.epfl.ch/pascal.fua/bio?lang=en&#34; target=&#34;_blank&#34;&gt;Prof. Pascal Fua&lt;/a&gt;&amp;rsquo;s &lt;a href=&#34;https://cvlab.epfl.ch/&#34; target=&#34;_blank&#34;&gt;Computer Vision Lab&lt;/a&gt; at &lt;a href=&#34;https://www.epfl.ch/&#34; target=&#34;_blank&#34;&gt;École polytechnique fédérale de Lausanne&lt;/a&gt;, Switzerland. We focus on compressing Fully Convolutional Networks wit skip connections such as the U-net or the Stacked Hourglass Network with minimal loss in performance using Knowledge Distillation (original &lt;a href=&#34;https://arxiv.org/abs/1503.02531&#34; target=&#34;_blank&#34;&gt;paper&lt;/a&gt; by Hinton et al.). Alongwith proposnig minor changes in the U-net architecture to improve performance, such as introduction of Batch Normalization layer, we compress the original Unet architecture with over 31 Million traininable parameters to just 30,900 paramters (over 100x compression!).  &lt;br&gt;&lt;/p&gt;
-
-&lt;p&gt;The project report and presentation slides are available &lt;a href=&#34;https://karttikeya.github.io/pdf/unet_report.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://karttikeya.github.io/pdf/unet_slides.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;. Also, entire codebase (U-net architecture in Pytorch + Distillation code) is available on &lt;a href=&#34;https://github.com/karttikeya/Unet-Distillation&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>This is my Master&amp;rsquo;s Research project mentored by Dr. Mathieu Salzmann at Prof. Pascal Fua&amp;rsquo;s Computer Vision Lab at École polytechnique fédérale de Lausanne, Switzerland. We focus on compressing Fully Convolutional Networks wit skip connections such as the U-net or the Stacked Hourglass Network with minimal loss in performance using Knowledge Distillation (original paper by Hinton et al.). Alongwith proposnig minor changes in the U-net architecture to improve performance, such as introduction of Batch Normalization layer, we compress the original Unet architecture with over 31 Million traininable parameters to just 30,900 paramters (over 100x compression!</description>
     </item>
     
     <item>
@@ -38,9 +36,7 @@ This is my Master&amp;rsquo;s Research project mentored by &lt;a href=&#34;https
       <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>https://karttikeya.github.io/project/emo-recog/</guid>
-      <description>&lt;p&gt;This was our project for &lt;a href=&#34;https://www.cse.iitk.ac.in/users/piyush/courses/ml_autumn16/ML.html&#34; target=&#34;_blank&#34;&gt;CS771A&lt;/a&gt; - Machine Learning Techniques,Fall 2016. We implemented various supervied classifiers such as naive bayes, Kernelized SVMs etc. for emotion classification on human facial Images from the &lt;a href=&#34;https://sites.google.com/site/emotiw2016/&#34; target=&#34;_blank&#34;&gt;Emotion Recognition in the Wild Challenge 2016&lt;/a&gt; dataset. &lt;br&gt;
- For supervised classifiers, we engineered suitable feature vectors using Google Cloud Vision API and annotated the ground truth in a semi-supervised fashion using Cloud Visio API and human supervision. Futher we compared the performance of traditional classification approaches against results from pre-trained Convolutional Neural Networks in our project&amp;rsquo;s &lt;a href=&#34;https://karttikeya.github.io/pdf/CS771-report.pdf&#34; target=&#34;_blank&#34;&gt;final report&lt;/a&gt;. Also, the slides for the presentation are available &lt;a href=&#34;https://karttikeya.github.io/pdf/CS771-slides.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>This was our project for CS771A - Machine Learning Techniques,Fall 2016. We implemented various supervied classifiers such as naive bayes, Kernelized SVMs etc. for emotion classification on human facial Images from the Emotion Recognition in the Wild Challenge 2016 dataset. For supervised classifiers, we engineered suitable feature vectors using Google Cloud Vision API and annotated the ground truth in a semi-supervised fashion using Cloud Visio API and human supervision. Futher we compared the performance of traditional classification approaches against results from pre-trained Convolutional Neural Networks in our project&amp;rsquo;s final report.</description>
     </item>
     
   </channel>

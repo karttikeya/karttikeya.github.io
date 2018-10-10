@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Karttikeya Mangalam</copyright>
     <lastBuildDate>Mon, 17 Jul 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/tags/ml/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://karttikeya.github.io/tags/ml/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Automated Modelling for Course Recommendation (C.R.A.M)</title>
@@ -16,9 +18,8 @@
       <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>https://karttikeya.github.io/project/cram/</guid>
-      <description>&lt;p&gt;Developed a Machine Learning based recommendation webapp for IIT Kanpur UG students for institute course selection (aided by additional recommendations for courses on EdX, coursera etc.) and personalised academic template based on research interests,previous internships and courses undertaken. Mined student resumes and CV in public domain for previous 10 years using text analysis for developing a database. Used collaborative filetring and nearest neighbours for recommendation.&lt;br&gt;
-Complete design and implementation in 24 hours and won OVERALL WINNER in Google DevFest 2016. Final Presentation &lt;a href=&#34;https://karttikeya.github.io/pdf/cram.pdf&#34; target=&#34;_blank&#34;&gt;slides&lt;/a&gt; and &lt;a href=&#34;https://github.com/shivrai/CRAM&#34; target=&#34;_blank&#34;&gt;code&lt;/a&gt; are public.&lt;/p&gt;
-</description>
+      <description>Developed a Machine Learning based recommendation webapp for IIT Kanpur UG students for institute course selection (aided by additional recommendations for courses on EdX, coursera etc.) and personalised academic template based on research interests,previous internships and courses undertaken. Mined student resumes and CV in public domain for previous 10 years using text analysis for developing a database. Used collaborative filetring and nearest neighbours for recommendation.
+Complete design and implementation in 24 hours and won OVERALL WINNER in Google DevFest 2016.</description>
     </item>
     
     <item>
@@ -36,9 +37,7 @@ Complete design and implementation in 24 hours and won OVERALL WINNER in Google 
       <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>https://karttikeya.github.io/project/emo-recog/</guid>
-      <description>&lt;p&gt;This was our project for &lt;a href=&#34;https://www.cse.iitk.ac.in/users/piyush/courses/ml_autumn16/ML.html&#34; target=&#34;_blank&#34;&gt;CS771A&lt;/a&gt; - Machine Learning Techniques,Fall 2016. We implemented various supervied classifiers such as naive bayes, Kernelized SVMs etc. for emotion classification on human facial Images from the &lt;a href=&#34;https://sites.google.com/site/emotiw2016/&#34; target=&#34;_blank&#34;&gt;Emotion Recognition in the Wild Challenge 2016&lt;/a&gt; dataset. &lt;br&gt;
- For supervised classifiers, we engineered suitable feature vectors using Google Cloud Vision API and annotated the ground truth in a semi-supervised fashion using Cloud Visio API and human supervision. Futher we compared the performance of traditional classification approaches against results from pre-trained Convolutional Neural Networks in our project&amp;rsquo;s &lt;a href=&#34;https://karttikeya.github.io/pdf/CS771-report.pdf&#34; target=&#34;_blank&#34;&gt;final report&lt;/a&gt;. Also, the slides for the presentation are available &lt;a href=&#34;https://karttikeya.github.io/pdf/CS771-slides.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
-</description>
+      <description>This was our project for CS771A - Machine Learning Techniques,Fall 2016. We implemented various supervied classifiers such as naive bayes, Kernelized SVMs etc. for emotion classification on human facial Images from the Emotion Recognition in the Wild Challenge 2016 dataset. For supervised classifiers, we engineered suitable feature vectors using Google Cloud Vision API and annotated the ground truth in a semi-supervised fashion using Cloud Visio API and human supervision. Futher we compared the performance of traditional classification approaches against results from pre-trained Convolutional Neural Networks in our project&amp;rsquo;s final report.</description>
     </item>
     
     <item>
@@ -47,10 +46,7 @@ Complete design and implementation in 24 hours and won OVERALL WINNER in Google 
       <pubDate>Mon, 17 Jul 2017 00:00:00 +0000</pubDate>
       
       <guid>https://karttikeya.github.io/project/mme-conv/</guid>
-      <description>&lt;p&gt;We aim to develop a measure for engagement/synchrony between two human speakers in a face to face conversation processing vaiorus modalities like audio-visual clues and gestures using emotion recognition and sentiment analysis. We are using the &lt;a href=&#34;http://sail.usc.edu/iemocap/&#34; target=&#34;_blank&#34;&gt;IEMOCAP&lt;/a&gt; database for our research purpose. &lt;br&gt;&lt;/p&gt;
-
-&lt;p&gt;As a baseline model, my work as undergraduate research project for Vth and VIth semester (junior year) focuses using the speech clues for learning the synchrony present in the audio signal between speakers. Discete Time Warping is suggested as a measure for syncrony for speech signals. &lt;br&gt; This preliminary &lt;a href=&#34;https://karttikeya.github.io/pdf/ugp.pdf&#34; target=&#34;_blank&#34;&gt;project report&lt;/a&gt; details our approach and assumptions. This research is still in progress.&lt;/p&gt;
-</description>
+      <description>We aim to develop a measure for engagement/synchrony between two human speakers in a face to face conversation processing vaiorus modalities like audio-visual clues and gestures using emotion recognition and sentiment analysis. We are using the IEMOCAP database for our research purpose. As a baseline model, my work as undergraduate research project for Vth and VIth semester (junior year) focuses using the speech clues for learning the synchrony present in the audio signal between speakers.</description>
     </item>
     
     <item>
