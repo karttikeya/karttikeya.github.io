@@ -86,7 +86,7 @@
     
     <url>
     
-      <loc>https://karttikeya.github.io/publication/bitwise-operations-of-cellular-automaton-on-grayscale-images---copy/</loc>
+      <loc>https://karttikeya.github.io/publication/deep-shallow/</loc>
       <lastmod>2017-06-18T18:48:06+09:00</lastmod>
     </url>
     
@@ -106,6 +106,15 @@
     
       <loc>https://karttikeya.github.io/publication/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://karttikeya.github.io/publication/bitwise-operations-of-cellular-automaton-on-grayscale-images---copy/</loc>
+      <lastmod>2016-06-18T18:48:06+09:00</lastmod>
     </url>
     
   
@@ -133,6 +142,16 @@
     
       <loc>https://karttikeya.github.io/publication_types/1/</loc>
       <lastmod>2018-06-18T18:48:06+09:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>https://karttikeya.github.io/publication_types/5/</loc>
+      <lastmod>2017-06-18T18:48:06+09:00</lastmod>
       <priority>0</priority>
     </url>
     

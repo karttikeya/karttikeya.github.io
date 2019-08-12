@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>5 on Karttikeya Mangalam</title>
+    <link>https://karttikeya.github.io/publication_types/5/</link>
+    <description>Recent content in 5 on Karttikeya Mangalam</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Karttikeya Mangalam</copyright>
+    <lastBuildDate>Sun, 18 Jun 2017 18:48:06 +0900</lastBuildDate>
+    
+	<atom:link href="https://karttikeya.github.io/publication_types/5/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Do deep neural networks learn shallow learnable examples first?</title>
+      <link>https://karttikeya.github.io/publication/deep-shallow/</link>
+      <pubDate>Sun, 18 Jun 2017 18:48:06 +0900</pubDate>
+      
+      <guid>https://karttikeya.github.io/publication/deep-shallow/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
