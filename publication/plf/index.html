@@ -32,6 +32,19 @@
   
 
   
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-163319156-1', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
 
   <link rel="alternate" href="https://karttikeya.github.io/index.xml" type="application/rss+xml" title="Karttikeya Mangalam">
   <link rel="feed" href="https://karttikeya.github.io/index.xml" type="application/rss+xml" title="Karttikeya Mangalam">
@@ -140,18 +153,13 @@
 <div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
 
   
-<div class="article-header">
-  <img src="/img/pull_plf.png" class="article-banner" itemprop="image">
-  
-</div>
-
 
 
   <div class="container pub-title">
     <h1 itemprop="name">Disentangling Human Dynamics for Pedestrian Locomotion Forecasting with Noisy Supervision</h1>
     <span class="pub-authors" itemprop="author">
       
-      Karttikeya Mangalam, Ehsan Adeli, Kuan-Hui Lee, Adrien Gaidon, Prof. Juan Carlos Niebles
+      <a href="http://karttikeya.github.io/" target="_blank">Karttikeya Mangalam</a>, <a href="https://web.stanford.edu/~eadeli/" target="_blank">Ehsan Adeli</a>, <a href="https://www.linkedin.com/in/kuan-hui-lee-23730370/" target="_blank">Kuan-Hui Lee</a>, <a href="https://www.linkedin.com/in/adrien-gaidon-63ab2358/" target="_blank">Adrien Gaidon</a>, <a href="http://www.niebles.net/" target="_blank">Prof. Juan Carlos Niebles</a>
       
     </span>
     <span class="pull-right">
@@ -205,26 +213,8 @@
   
 
   <h3>Abstract</h3>
-  <p class="pub-abstract" itemprop="text">We tackle the problem of Human Locomotion Forecasting, a task for jointly predicting the spatial positions of several keypoints on human body in the near future under an egocentric setting. In contrast to the previous work that aims to solve either the task of pose prediction or trajectory forecasting in isolation, we propose a framework to unify these two problems and address the practically useful task of pedestrian locomotion prediction in the wild.  Among the major challenges in solving this task is the scarcity of annotated egocentric video datasets with dense annotations for pose, depth, or egomotion.   To surmount this difficulty,  we use state-of-the-art models to generate (noisy) annotations and propose robust forecasting models that can learn from this noisy supervision. We present a method to disentangle the overall pedestrian motion into easier to learn subparts by utilizing a pose completion and a decomposition module. The completion module fills in the missing key-point annotations and the decomposition module breaks the cleaned locomotion down to global (trajectory) and local (pose keypoint movements). Further, with Quasi RNN as our backbone, we propose a novel hierarchical trajectory forecasting network that utilizes low-level vision domain specific signals like egomotion and depth to predict the global trajectory.  Our method leads to state-of-the-art results for the prediction of human locomotion in the egocentric view.</p>
+  <p class="pub-abstract" itemprop="text">We tackle the problem of Human Locomotion Forecasting, a task for jointly predicting the spatial positions of several keypoints on human body in the near future under an egocentric setting. In contrast to the previous work that aims to solve either the task of pose prediction or trajectory forecasting in isolation, we propose a framework to unify these two problems and address the practically useful task of pedestrian locomotion prediction in the wild.  Among the major challenges in solving this task is the scarcity of annotated egocentric video datasets with dense annotations for pose, depth, or egomotion.   To surmount this difficulty,  we use state-of-the-art models to generate (noisy) annotations and propose robust forecasting models that can learn from this noisy supervision. We present a method to disentangle the overall pedestrian motion into easier to learn subparts by utilizing a pose completion and a decomposition module. The completion module fills in the missing key-point annotations and the decomposition module breaks the cleaned locomotion down to global (trajectory) and local (pose keypoint movements). Further, with Quasi RNN as our backbone, we propose a novel hierarchical trajectory forecasting network that utilizes low-level vision domain specific signals like egomotion and depth to predict the global trajectory. Our method leads to state-of-the-art results for the prediction of human locomotion in the egocentric view.</p>
 
-  
-  <div class="row">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-10">
-      <div class="row">
-        <div class="col-xs-12 col-sm-3 pub-row-heading">Type</div>
-        <div class="col-xs-12 col-sm-9">
-          
-          <a href="/publication/#1">
-            Conference proceedings
-          </a>
-          
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-1"></div>
-  </div>
-  <div class="visible-xs space-below"></div>
   
 
   <div class="row">
@@ -245,7 +235,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
         <div class="col-xs-12 col-sm-9" itemprop="datePublished">
-          January, 2020
+          March, 2020
         </div>
       </div>
     </div>
@@ -270,6 +260,14 @@
 </a>
 
 
+<a class="btn btn-primary btn-outline" href="https://karttikeya.github.io/pdf/plf_poster.pdf">
+  Slides
+</a>
+
+
+<a class="btn btn-primary btn-outline" href="https://www.youtube.com/watch?v=GHkT0lyZtDg">
+  Video
+</a>
 
 
 
@@ -286,7 +284,35 @@
 
   <div class="space-below"></div>
 
-  <div class="article-style"></div>
+  <div class="article-style">
+
+<figure>
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GHkT0lyZtDg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<figcaption>Oral Presentation Video (WACV 2020) </figcaption>
+</center>
+</figure>
+
+<p><center> <h3> Qualitative Results </h3> </center>
+<figure>
+<center>
+<iframe width="560" height="315" src="https://karttikeya.github.io/img/wacv_viz.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</center>
+<figcaption>Qualitative Results for overall locomotion forecasting in self-driving scenarios. Blue represents input locomotion to the network, Green is the predicted output locomotion. The network reasons jointly about path &amp; pose for plausible future locomotion predictions.  </figcaption></p>
+
+<p></figure></p>
+
+<h3 id="please-cite-using-following-bibtex">Please cite using following bibtex:</h3>
+
+<pre><code>@inproceedings{mangalam2020disentangling,
+  title={Disentangling human dynamics for pedestrian locomotion forecasting with noisy supervision},
+  author={Mangalam, Karttikeya and Adeli, Ehsan and Lee, Kuan-Hui and Gaidon, Adrien and Niebles, Juan Carlos},
+  booktitle={The IEEE Winter Conference on Applications of Computer Vision},
+  pages={2784--2793},
+  year={2020}
+}
+</code></pre>
+</div>
 
 </div>
 
@@ -308,7 +334,7 @@
   <div class="container">
     <p class="powered-by">
 
-      &copy; 2017 Karttikeya Mangalam &middot; 
+      &copy; 2020 Karttikeya Mangalam &middot; 
 
       Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
       theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
