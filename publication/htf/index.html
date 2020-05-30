@@ -1,381 +1,386 @@
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.49" />
-  <meta name="author" content="Karttikeya Mangalam">
-  <meta name="description" content="PhD Student in Computer Science">
-
-  
-  
-  
-    
-  
-  
-    
-    
-    <link rel="stylesheet" href="/css/highlight.min.css">
-    
-  
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.0/css/academicons.min.css" integrity="sha512-GGGNUPDhnG8LEAEDsjqYIQns+Gu8RBs4j5XGlxl7UfRaZBhCCm5jenJkeJL8uPuOXGqgl8/H1gjlWQDRjd3cUQ==" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
-  
-  
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono">
-  <link rel="stylesheet" href="/css/hugo-academic.css">
-  
-
-  
-    <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'UA-163319156-1', 'auto');
-      ga('require', 'eventTracker');
-      ga('require', 'outboundLinkTracker');
-      ga('require', 'urlChangeTracker');
-      ga('send', 'pageview');
-    </script>
-    <script async src="//www.google-analytics.com/analytics.js"></script>
-    
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
-    
-  
-
-  <link rel="alternate" href="https://karttikeya.github.io/index.xml" type="application/rss+xml" title="Karttikeya Mangalam">
-  <link rel="feed" href="https://karttikeya.github.io/index.xml" type="application/rss+xml" title="Karttikeya Mangalam">
-
-  <link rel="icon" type="image/png" href="/img/icon.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
-
-  <link rel="canonical" href="https://karttikeya.github.io/publication/htf/">
-
-  
-
-  <title>It Is Not the Journey but the Destination: Endpoint Conditioned Trajectory Prediction | Karttikeya Mangalam</title>
-
-</head>
-<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
-
-<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
-  <div class="container">
-
-    
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-              data-target=".navbar-collapse" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/">Karttikeya Mangalam</a>
-    </div>
-
-    
-    <div class="collapse navbar-collapse">
-
-      
-      <ul class="nav navbar-nav navbar-right">
-        
-
-        
-
-        <li class="nav-item">
-          <a href="/#about">
-            
-            <span>Home</span>
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        <li class="nav-item">
-          <a href="/#publications_selected">
-            
-            <span>Publications</span>
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        <li class="nav-item">
-          <a href="/#projects">
-            
-            <span>Projects</span>
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        <li class="nav-item">
-          <a href="/#teaching">
-            
-            <span>Teaching</span>
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        <li class="nav-item">
-          <a href="/#contact">
-            
-            <span>Contact</span>
-          </a>
-        </li>
-
-        
-        
-
-        
-      </ul>
-
-    </div>
-  </div>
-</nav>
-
-<div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
-
-  
-
-
-  <div class="container pub-title">
-    <h1 itemprop="name">It Is Not the Journey but the Destination: Endpoint Conditioned Trajectory Prediction</h1>
-    <span class="pub-authors" itemprop="author">
-      
-      <a href="http://karttikeya.github.io/" target="_blank">Karttikeya Mangalam</a>, <a href="https://web.stanford.edu/~eadeli/" target="_blank">Ehsan Adeli</a>, <a href="https://www.linkedin.com/in/kuan-hui-lee-23730370/" target="_blank">Kuan-Hui Lee</a>, <a href="https://www.linkedin.com/in/adrien-gaidon-63ab2358/" target="_blank">Adrien Gaidon</a>
-      
-    </span>
-    <span class="pull-right">
-      
-<div class="share-box" aria-hidden="true">
-  <ul class="share">
-    <li>
-      <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fkarttikeya.github.io%2fpublication%2fhtf%2f"
-         target="_blank">
-        <i class="fa fa-facebook"></i>
-      </a>
-    </li>
-    <li>
-      <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=It%20Is%20Not%20the%20Journey%20but%20the%20Destination%3a%20Endpoint%20Conditioned%20Trajectory%20Prediction&amp;url=https%3a%2f%2fkarttikeya.github.io%2fpublication%2fhtf%2f"
-         target="_blank">
-        <i class="fa fa-twitter"></i>
-      </a>
-    </li>
-    <li>
-      <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fkarttikeya.github.io%2fpublication%2fhtf%2f&amp;title=It%20Is%20Not%20the%20Journey%20but%20the%20Destination%3a%20Endpoint%20Conditioned%20Trajectory%20Prediction"
-         target="_blank">
-        <i class="fa fa-linkedin"></i>
-      </a>
-    </li>
-    <li>
-      <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fkarttikeya.github.io%2fpublication%2fhtf%2f&amp;title=It%20Is%20Not%20the%20Journey%20but%20the%20Destination%3a%20Endpoint%20Conditioned%20Trajectory%20Prediction"
-         target="_blank">
-        <i class="fa fa-weibo"></i>
-      </a>
-    </li>
-    <li>
-      <a class="email"
-         href="mailto:?subject=It%20Is%20Not%20the%20Journey%20but%20the%20Destination%3a%20Endpoint%20Conditioned%20Trajectory%20Prediction&amp;body=https%3a%2f%2fkarttikeya.github.io%2fpublication%2fhtf%2f">
-        <i class="fa fa-envelope"></i>
-      </a>
-    </li>
-  </ul>
-</div>
-
-
-    </span>
-  </div>
-
-</div>
-<div class="article-container">
-
-  
-
-  <h3>Abstract</h3>
-  <p class="pub-abstract" itemprop="text"></p>
-
-  
-
-  <div class="row">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-10">
-      <div class="row">
-        <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
-        <div class="col-xs-12 col-sm-9">s</div>
-      </div>
-    </div>
-    <div class="col-sm-1"></div>
-  </div>
-  <div class="visible-xs space-below"></div>
-
-  <div class="row">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-10">
-      <div class="row">
-        <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
-        <div class="col-xs-12 col-sm-9" itemprop="datePublished">
-          March, 2020
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-1"></div>
-  </div>
-  <div class="visible-xs space-below"></div>
-
-  <div class="row" style="padding-top: 10px">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-10">
-      <div class="row">
-        <div class="col-xs-12 col-sm-3 pub-row-heading" style="line-height:34px;">Links</div>
-        <div class="col-xs-12 col-sm-9">
-
-          
-
-
-
-
-<a class="btn btn-primary btn-outline" href="https://arxiv.org/pdf/1911.01138.pdf">
-  PDF
-</a>
-
-
-
-
-
-
-<a class="btn btn-primary btn-outline" href="https://karttikeya.github.io/publication/htf/project">
-  Project
-</a>
-
-
-
-
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-1"></div>
-  </div>
-  <div class="visible-xs space-below"></div>
-
-  <div class="space-below"></div>
-
-  <div class="article-style">
-
-<figure>
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GHkT0lyZtDg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<figcaption>Oral Presentation Video (WACV 2020) </figcaption>
-</center>
-</figure>
-
-<p><center> <h3> Qualitative Results </h3> </center>
-<figure>
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-4gCHoSrWvY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</center>
-<figcaption>Qualitative Results for overall locomotion forecasting in self-driving scenarios. Blue represents input locomotion to the network, Green is the predicted output locomotion. The network reasons jointly about path &amp; pose for plausible future locomotion predictions.  </figcaption></p>
-
-<p></figure></p>
-
-<h3 id="please-cite-using-following-bibtex">Please cite using following bibtex:</h3>
-
-<pre><code>@inproceedings{mangalam2020disentangling,
-  title={Disentangling human dynamics for pedestrian locomotion forecasting with noisy supervision},
-  author={Mangalam, Karttikeya and Adeli, Ehsan and Lee, Kuan-Hui and Gaidon, Adrien and Niebles, Juan Carlos},
-  booktitle={The IEEE Winter Conference on Applications of Computer Vision},
-  pages={2784--2793},
-  year={2020}
-}
-</code></pre>
-</div>
-
-</div>
-
-<div class="container">
-  <nav>
-  <ul class="pager">
-    
-    <li class="previous"><a href="https://karttikeya.github.io/publication/future-localization/"><span
-      aria-hidden="true">&larr;</span> Future Person Localization in First-Person Videos</a></li>
-    
-
-    
-    <li class="next"><a href="https://karttikeya.github.io/publication/plf/">Disentangling Human Dynamics for Pedestrian Locomotion Forecasting with Noisy Supervision <span
-      aria-hidden="true">&rarr;</span></a></li>
-    
-  </ul>
-</nav>
-
-</div>
-
-<footer class="site-footer">
-  <div class="container">
-    <p class="powered-by">
-
-      &copy; 2020 Karttikeya Mangalam &middot; 
-
-      Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
-      theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
-
-      <span class="pull-right" aria-hidden="true">
-        <a href="#" id="back_to_top">
-          <span class="button_icon">
-            <i class="fa fa-chevron-up fa-2x"></i>
-          </span>
-        </a>
-      </span>
-
-    </p>
-  </div>
-</footer>
-
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.2/imagesloaded.pkgd.min.js" integrity="sha512-iHzEu7GbSc705hE2skyH6/AlTpOfBmkx7nUqTLGzPYR+C1tRaItbRlJ7hT/D3YQ9SV0fqLKzp4XY9wKulTBGTw==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js" integrity="sha512-Z5heTz36xTemt1TbtbfXtTq5lMfYnOkXM2/eWcTTiLU01+Sw4ku1i7vScDc8fWhrP2abz9GQzgKH5NGBLoYlAw==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js" integrity="sha512-CDeU7pRtkPX6XJtF/gcFWlEwyaX7mcAp5sO3VIu/ylsdR74wEw4wmBpD5yYTrmMAiAboi9thyBUr1vXRPA7t0Q==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
-    
-    <script src="/js/hugo-academic.js"></script>
-    
-
-    
-    
-      
-      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
-
-      
-
-      
-
-      <script>hljs.initHighlightingOnLoad();</script>
-    
-
-    
-    
-
-  </body>
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+<style type="text/css">
+    body {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight:300;
+        font-size:18px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1100px;
+    }
+
+    h1 {
+        font-weight:300;
+    }
+
+    .disclaimerbox {
+        background-color: #eee;
+        border: 1px solid #eeeeee;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+        padding: 20px;
+    }
+
+    video.header-vid {
+        height: 140px;
+        border: 1px solid black;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+    }
+
+    img.header-img {
+        height: 140px;
+        border: 1px solid black;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+    }
+
+    img.rounded {
+        border: 1px solid #eeeeee;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+    }
+
+    a:link,a:visited
+    {
+        color: #1367a7;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #208799;
+    }
+
+    td.dl-link {
+        height: 160px;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    tr.spaceUnder>td {
+        padding-bottom: 10px;
+    }
+    .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+        box-shadow:
+                0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+                5px 5px 0 0px #fff, /* The second layer */
+                5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+                10px 10px 0 0px #fff, /* The third layer */
+                10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+                15px 15px 0 0px #fff, /* The fourth layer */
+                15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+                20px 20px 0 0px #fff, /* The fifth layer */
+                20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+                25px 25px 0 0px #fff, /* The fifth layer */
+                25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+        margin-left: 10px;
+        margin-right: 45px;
+    }
+
+
+    .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+        box-shadow:
+                0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+                5px 5px 0 0px #fff, /* The second layer */
+                5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+                10px 10px 0 0px #fff, /* The third layer */
+                10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 30px;
+        margin-bottom: 5px;
+    }
+
+    .vert-cent {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    hr
+    {
+        border: 0;
+        height: 1.5px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+</style>
+
+<html>
+  <head>
+        <title>Long-term Human Motion Prediction with Scene Context</title>
+        <meta property="og:title" content="sceneflow" />
+        <meta property="og:url" content="https://www.youtube.com/watch?v=cYHQKtBLI3Q" />
+  </head>
+
+  <body>
+    <br>
+    <center>
+    <span style="font-size:42px">Long-term Human Motion Prediction with Scene Context </span>
+
+    <!--
+    </center>
+    <br>
+    <table align=center width=700px>
+       <tr>
+        <td align=center width=100px>
+        <center>
+        <span style="font-size:24px">CVPR 2019</span>
+        </center>
+        </td>
+     </tr>
+    </table>
+    -->
+    <br>
+    <br>
+      <table align=center width=800px>
+
+      <!--
+       <tr>
+         <td align=center width=100px>
+         <center>
+         <span style="font-size:16px"><a href="https://people.eecs.berkeley.edu/~zhecao/">Zhe Cao</a></span><sup>1</sup>
+         </center>
+         </td>
+
+        <td align=center width=100px>
+        <center>
+        <span style="font-size:16px"><a href="https://people.eecs.berkeley.edu/~hangg/">Hang Gao</a></span><sup>1</sup>
+        </center>
+        </td>
+
+        <td align=center width=150px>
+        <center>
+        <span style="font-size:16px"><a href="https://karttikeya.github.io/">Karttikeya Mangalam</a></span><sup>1</sup>
+        </center>
+        </td>
+
+        <td align=center width=100px>
+        <center>
+        <span style="font-size:16px"><a href="https://scholar.google.com/citations?user=oyh-YNwAAAAJ&hl=en">Qi-Zhi Cai</a></span><sup>2</sup>
+        </center>
+        </td>
+
+        <td align=center width=100px>
+        <center>
+        <span style="font-size:16px"><a href="https://minhpvo.github.io/">Minh Vo</a></span><sup>3</sup>
+        </center>
+        </td>
+
+        <td align=center width=100px>
+        <center>
+        <span style="font-size:16px"><a href="http://www.eecs.berkeley.edu/~malik/">Jitendra Malik</a></span><sup>1</sup>
+        </center>
+        </td>
+     </tr>
+   -->
+
+     <tr>
+       <span style="font-size:22px"><a href="https://people.eecs.berkeley.edu/~zhecao/">Zhe Cao</a></span><sup>1</sup>,&nbsp;&nbsp;
+      <span style="font-size:22px"><a href="https://people.eecs.berkeley.edu/~hangg/">Hang Gao</a></span><sup>1</sup>,&nbsp;&nbsp;
+      <span style="font-size:22px"><a href="https://karttikeya.github.io/">Karttikeya Mangalam</a></span><sup>1</sup>,&nbsp;&nbsp;
+      <span style="font-size:22px"><a href="https://scholar.google.com/citations?user=oyh-YNwAAAAJ&hl=en">Qi-Zhi Cai</a></span><sup>2</sup>,&nbsp;&nbsp;
+      <span style="font-size:22px"><a href="https://minhpvo.github.io/">Minh Vo</a></span><sup>3</sup>,&nbsp;&nbsp;
+      <span style="font-size:22px"><a href="http://www.eecs.berkeley.edu/~malik/">Jitendra Malik</a></span><sup>1</sup>
+   </tr>
+
+     <tr>
+       <td align=center colspan="2" style="font-size:22px">
+       <center>
+       <sup>1</sup>UC Berkeley
+       </center>
+       </td>
+
+      <td align=center colspan="2" style="font-size:22px">
+      <center>
+      <sup>2</sup>Nanjing University
+      </center>
+      </td>
+
+      <td align=center colspan="2" style="font-size:22px">
+      <center>
+      <sup>3</sup>Facebook Reality Lab
+      </center>
+      </td>
+      </tr>
+    </table>
+
+            <!--
+            <br>
+            <table align=center width=600px>
+                <tr>
+                    <td width=700px>
+                      <center>
+                          <img src = "teaser.jpg" height="180px"></img><br>
+                    </center>
+                    </td>
+                </tr>
+
+                <tr>
+                  <td colspan="3"> <br>
+                In the first image, can you predict what the human is going to do next? Depending on his intention, the person can choose to turn left to climb up stairs; he may also go straight through the hallway or turn right to fetch some items off the table. In this work, we propose a method to generate long-term stochastic predictions of future 3D human motion, while also considering the scene context.
+    Given one single RGB image and 2D human pose history, our method first generates multiple possible future 2D destinations, then predicts future 3D human paths towards each destination, as shown in the middle, and finally generates 3D human pose sequences following the path, shown in the ground-truth 3D point cloud of the scene in the right. We train our model on both real-world data with noisy ground-truth and our newly-created large-scale synthetic data with diverse scenes, characters, and motions. Both quantitative comparisons and qualitative results demonstrate that our method can generate plausible scene-adaptive predictions.
+                  </td>
+                </tr>
+            </table>
+
+
+          <hr> -->
+          <br>
+          <br>
+          <center>
+            <table align=center width=700>
+                <tr>
+                  <td><video width="700px" controls> <source src="hmp.m4v" type=video/mp4><video></td>
+              </tr>
+            </table>
+          </center>
+          <br>
+
+          <hr>
+          <center><h1>Abstract</h1></center>
+          <table align=center width=600px>
+              <tr>
+                  <td width=700px>
+                    <center>
+                        <img src = "teaser.jpg" height="180px"></img><br>
+                  </center>
+                  </td>
+              </tr>
+
+              <tr>
+                <td colspan="3"> <br>
+                  Human movement is goal-directed and influenced by the spatial layout of the objects in the scene. To plan future human motion, it is crucial to perceive the environment -- imagine how hard it is to navigate a new room with lights off.
+                  Existing works on predicting human motion do not pay attention to the scene context and thus struggle in long-term prediction.
+                  In this work, we propose a novel three-stage framework that exploits scene context to tackle this task, as shown in the above image.
+                  Given a single scene image and 2D pose histories, our method first samples multiple human motion goals, then plans 3D human paths towards each goal, and finally predicts 3D human pose sequences following each path.
+                  For stable training and rigorous evaluation, we contribute a diverse synthetic dataset with clean annotations.
+                  In both synthetic and real datasets, our method shows consistent quantitative and qualitative improvements over existing methods.
+                </td>
+              </tr>
+          </table>
+
+
+        <hr>
+         <!-- <table align=center width=550px> -->
+                <center><h1>Results</h1></center>
+                <table align=center width=900px>
+                    <tr>
+                        <td width=1200px colspan="3">
+                          <center>
+                              <img src = "results.jpg" height="900px"></img><br>
+                        </center>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td align=center width=400px>
+                        (a)
+                      </td>
+                      <td align=center width=400px>
+                        (b)
+                      </td>
+                      <td align=center width=400px>
+                        (c)
+                      </td>
+                  </tr>
+
+                    <tr>
+                        <td width=600px colspan="3">
+                              <span style="font-size:14px"><i>Qualitative results of our method. (a) input: short-term 2D human pose sequence and a single RGB image, (b-c): future human motion predictions with consideration of the scene context. We visualize 3D human poses in ground-truth point cloud and change the color gradually from purple to dark blue, and eventually light blue across time steps. The top two rows show our three-second-long prediction results in GTA-IM dataset and the bottom two rows show our two-second-long prediction results in PROX dataset. To best visualize the 3D poses, we may rotate the camera viewpoint slightly for visualizing the two predictions from the same input sequence. Our method can generate diverse human motion, e.g., turning left/right, walking straight, taking a u-turn, climbing stairs, standing up from sitting, and laying back on the sofa. </i>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+      <hr>
+      <table align=center width=800>
+       <center><h1>GTA-IM Dataset</h1></center>
+          <tr class="spaceUnder">
+            <td>
+              <img style="width:280px" src="demo1.gif"/>
+            </td>
+            <td>
+              <img style="width:280px" src="demo2.gif"/>
+            </td>
+            <td>
+              <img style="width:280px" src="demo3.gif"/>
+            </td>
+        </tr>
+
+        <tr>
+          <td>
+            <img style="width:280px" src="demo4.gif"/>
+          </td>
+          <td>
+            <img style="width:280px" src="demo5.gif"/>
+          </td>
+          <td>
+            <img style="width:280px" src="demo6.gif"/>
+          </td>
+      </tr>
+
+        <tr>
+          <td align=center><br>
+            <span style="font-size:24px">&nbsp;<a href='#'>[Sample #1]</a>
+          </td>
+          <td align=center><br>
+            <span style="font-size:24px">&nbsp;<a href='#'>[Sample #2]</a>
+          </td>
+          <td align=center><br>
+            <span style="font-size:24px">&nbsp;<a href='#'>[Full data]</a>
+          </td>
+        <tr>
+        <tr>
+          <td colspan="3"> <br>
+            Existing real datasets of human motion in the wild provide relatively noisy 3D human poses. This motivates us to collect a synthetic dataset with clean annotations and large diversity in appearances, views, and motions: 10 different large house models, 13 weathers, 50 human models, 22 walking styles, and various actions.
+Our dataset contains is useful for pretraining which improves performance in real dataset, and essential for rigorious comparison due to its clean annotations.
+Compared to previous efforts to generate synthetic datasets, we spent extensive effort in creating an interface with the game engine in order to control characters, cameras, and action tasks in a fully automatic pipeline.
+          </td>
+        </tr>
+      </table>
+    <br>
+
+    <hr>
+      <table align=center width=800>
+       <center><h1>Paper</h1></center>
+          <tr>
+            <td><a href="preprint.pdf"><img style="width:400px" src="thumbnail.png"/></a></td>
+            <td><span style="font-size:14pt">Cao, Gao, Mangalam, Cai, Vo, Malik.<br><br>
+              Long-term Human Motion Prediction<br> with Scene Context<br><br>
+            Preprint, 2020.<br><br>
+                <a href="preprint.pdf">[Paper]</a> &nbsp; &nbsp;
+                <a href="supplement.pdf">[Supplement]</a> &nbsp; &nbsp;
+                <a href="bibtex.txt">[Bibtex]</a>
+            <!-- [hosted on <a href="#">arXiv</a>]</a> -->
+              </td>
+        </tr>
+      </table>
+    <br>
+    <!--
+    <hr>
+      <center><h1>Code</h1></center>
+      <tr>
+        <td>
+          <span style="font-size:28px">&nbsp;<a href='#'>[GitHub]</a>  (coming soon)
+        </td>
+      <br>
+      -->
+      <hr>
+            <table align=center width=1100px>
+                <tr>
+                    <td>
+                      <left>
+                <center><h1>Acknowledgements</h1></center>
+                We thank members of the BAIR community for helpful discussions and comments. This webpage template was borrowed from some <a href="https://richzhang.github.io/colorization/">colorful folks</a>.
+            </left>
+        </td>
+        </tr>
+        </table>
+
+        <br><br>
+</body>
 </html>
-
