@@ -1,0 +1,386 @@
+
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+
+<style type="text/css">
+    body {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight:300;
+        font-size:18px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1100px;
+    }
+
+    h1 {
+        font-weight:300;
+    }
+
+    .disclaimerbox {
+        background-color: #eee;
+        border: 1px solid #eeeeee;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+        padding: 20px;
+    }
+
+    video.header-vid {
+        height: 140px;
+        border: 1px solid black;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+    }
+
+    img.header-img {
+        height: 140px;
+        border: 1px solid black;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+    }
+
+    img.rounded {
+        border: 1px solid #eeeeee;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+    }
+
+    a:link,a:visited
+    {
+        color: #1367a7;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #208799;
+    }
+
+    td.dl-link {
+        height: 160px;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    tr.spaceUnder>td {
+        padding-bottom: 10px;
+    }
+    .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+        box-shadow:
+                0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+                5px 5px 0 0px #fff, /* The second layer */
+                5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+                10px 10px 0 0px #fff, /* The third layer */
+                10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+                15px 15px 0 0px #fff, /* The fourth layer */
+                15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+                20px 20px 0 0px #fff, /* The fifth layer */
+                20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+                25px 25px 0 0px #fff, /* The fifth layer */
+                25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+        margin-left: 10px;
+        margin-right: 45px;
+    }
+
+
+    .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+        box-shadow:
+                0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+                5px 5px 0 0px #fff, /* The second layer */
+                5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+                10px 10px 0 0px #fff, /* The third layer */
+                10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 30px;
+        margin-bottom: 5px;
+    }
+
+    .vert-cent {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    hr
+    {
+        border: 0;
+        height: 1.5px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+</style>
+
+<html>
+  <head>
+        <title>Long-term Human Motion Prediction with Scene Context</title>
+        <meta property="og:title" content="sceneflow" />
+        <meta property="og:url" content="https://www.youtube.com/watch?v=cYHQKtBLI3Q" />
+  </head>
+
+  <body>
+    <br>
+    <center>
+    <span style="font-size:42px">Long-term Human Motion Prediction with Scene Context </span>
+
+    <!--
+    </center>
+    <br>
+    <table align=center width=700px>
+       <tr>
+        <td align=center width=100px>
+        <center>
+        <span style="font-size:24px">CVPR 2019</span>
+        </center>
+        </td>
+     </tr>
+    </table>
+    -->
+    <br>
+    <br>
+      <table align=center width=800px>
+
+      <!--
+       <tr>
+         <td align=center width=100px>
+         <center>
+         <span style="font-size:16px"><a href="https://people.eecs.berkeley.edu/~zhecao/">Zhe Cao</a></span><sup>1</sup>
+         </center>
+         </td>
+
+        <td align=center width=100px>
+        <center>
+        <span style="font-size:16px"><a href="https://people.eecs.berkeley.edu/~hangg/">Hang Gao</a></span><sup>1</sup>
+        </center>
+        </td>
+
+        <td align=center width=150px>
+        <center>
+        <span style="font-size:16px"><a href="https://karttikeya.github.io/">Karttikeya Mangalam</a></span><sup>1</sup>
+        </center>
+        </td>
+
+        <td align=center width=100px>
+        <center>
+        <span style="font-size:16px"><a href="https://scholar.google.com/citations?user=oyh-YNwAAAAJ&hl=en">Qi-Zhi Cai</a></span><sup>2</sup>
+        </center>
+        </td>
+
+        <td align=center width=100px>
+        <center>
+        <span style="font-size:16px"><a href="https://minhpvo.github.io/">Minh Vo</a></span><sup>3</sup>
+        </center>
+        </td>
+
+        <td align=center width=100px>
+        <center>
+        <span style="font-size:16px"><a href="http://www.eecs.berkeley.edu/~malik/">Jitendra Malik</a></span><sup>1</sup>
+        </center>
+        </td>
+     </tr>
+   -->
+
+     <tr>
+       <span style="font-size:22px"><a href="https://people.eecs.berkeley.edu/~zhecao/">Zhe Cao</a></span><sup>1</sup>,&nbsp;&nbsp;
+      <span style="font-size:22px"><a href="https://people.eecs.berkeley.edu/~hangg/">Hang Gao</a></span><sup>1</sup>,&nbsp;&nbsp;
+      <span style="font-size:22px"><a href="https://karttikeya.github.io/">Karttikeya Mangalam</a></span><sup>1</sup>,&nbsp;&nbsp;
+      <span style="font-size:22px"><a href="https://scholar.google.com/citations?user=oyh-YNwAAAAJ&hl=en">Qi-Zhi Cai</a></span><sup>2</sup>,&nbsp;&nbsp;
+      <span style="font-size:22px"><a href="https://minhpvo.github.io/">Minh Vo</a></span><sup>3</sup>,&nbsp;&nbsp;
+      <span style="font-size:22px"><a href="http://www.eecs.berkeley.edu/~malik/">Jitendra Malik</a></span><sup>1</sup>
+   </tr>
+
+     <tr>
+       <td align=center colspan="2" style="font-size:22px">
+       <center>
+       <sup>1</sup>UC Berkeley
+       </center>
+       </td>
+
+      <td align=center colspan="2" style="font-size:22px">
+      <center>
+      <sup>2</sup>Nanjing University
+      </center>
+      </td>
+
+      <td align=center colspan="2" style="font-size:22px">
+      <center>
+      <sup>3</sup>Facebook Reality Lab
+      </center>
+      </td>
+      </tr>
+    </table>
+
+            <!--
+            <br>
+            <table align=center width=600px>
+                <tr>
+                    <td width=700px>
+                      <center>
+                          <img src = "teaser.jpg" height="180px"></img><br>
+                    </center>
+                    </td>
+                </tr>
+
+                <tr>
+                  <td colspan="3"> <br>
+                In the first image, can you predict what the human is going to do next? Depending on his intention, the person can choose to turn left to climb up stairs; he may also go straight through the hallway or turn right to fetch some items off the table. In this work, we propose a method to generate long-term stochastic predictions of future 3D human motion, while also considering the scene context.
+    Given one single RGB image and 2D human pose history, our method first generates multiple possible future 2D destinations, then predicts future 3D human paths towards each destination, as shown in the middle, and finally generates 3D human pose sequences following the path, shown in the ground-truth 3D point cloud of the scene in the right. We train our model on both real-world data with noisy ground-truth and our newly-created large-scale synthetic data with diverse scenes, characters, and motions. Both quantitative comparisons and qualitative results demonstrate that our method can generate plausible scene-adaptive predictions.
+                  </td>
+                </tr>
+            </table>
+
+
+          <hr> -->
+          <br>
+          <br>
+          <center>
+            <table align=center width=700>
+                <tr>
+                  <td><video width="700px" controls> <source src="hmp.m4v" type=video/mp4><video></td>
+              </tr>
+            </table>
+          </center>
+          <br>
+
+          <hr>
+          <center><h1>Abstract</h1></center>
+          <table align=center width=600px>
+              <tr>
+                  <td width=700px>
+                    <center>
+                        <img src = "teaser.jpg" height="180px"></img><br>
+                  </center>
+                  </td>
+              </tr>
+
+              <tr>
+                <td colspan="3"> <br>
+                  Human movement is goal-directed and influenced by the spatial layout of the objects in the scene. To plan future human motion, it is crucial to perceive the environment -- imagine how hard it is to navigate a new room with lights off.
+                  Existing works on predicting human motion do not pay attention to the scene context and thus struggle in long-term prediction.
+                  In this work, we propose a novel three-stage framework that exploits scene context to tackle this task, as shown in the above image.
+                  Given a single scene image and 2D pose histories, our method first samples multiple human motion goals, then plans 3D human paths towards each goal, and finally predicts 3D human pose sequences following each path.
+                  For stable training and rigorous evaluation, we contribute a diverse synthetic dataset with clean annotations.
+                  In both synthetic and real datasets, our method shows consistent quantitative and qualitative improvements over existing methods.
+                </td>
+              </tr>
+          </table>
+
+
+        <hr>
+         <!-- <table align=center width=550px> -->
+                <center><h1>Results</h1></center>
+                <table align=center width=900px>
+                    <tr>
+                        <td width=1200px colspan="3">
+                          <center>
+                              <img src = "results.jpg" height="900px"></img><br>
+                        </center>
+                        </td>
+                    </tr>
+                    <tr>
+                      <td align=center width=400px>
+                        (a)
+                      </td>
+                      <td align=center width=400px>
+                        (b)
+                      </td>
+                      <td align=center width=400px>
+                        (c)
+                      </td>
+                  </tr>
+
+                    <tr>
+                        <td width=600px colspan="3">
+                              <span style="font-size:14px"><i>Qualitative results of our method. (a) input: short-term 2D human pose sequence and a single RGB image, (b-c): future human motion predictions with consideration of the scene context. We visualize 3D human poses in ground-truth point cloud and change the color gradually from purple to dark blue, and eventually light blue across time steps. The top two rows show our three-second-long prediction results in GTA-IM dataset and the bottom two rows show our two-second-long prediction results in PROX dataset. To best visualize the 3D poses, we may rotate the camera viewpoint slightly for visualizing the two predictions from the same input sequence. Our method can generate diverse human motion, e.g., turning left/right, walking straight, taking a u-turn, climbing stairs, standing up from sitting, and laying back on the sofa. </i>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+      <hr>
+      <table align=center width=800>
+       <center><h1>GTA-IM Dataset</h1></center>
+          <tr class="spaceUnder">
+            <td>
+              <img style="width:280px" src="demo1.gif"/>
+            </td>
+            <td>
+              <img style="width:280px" src="demo2.gif"/>
+            </td>
+            <td>
+              <img style="width:280px" src="demo3.gif"/>
+            </td>
+        </tr>
+
+        <tr>
+          <td>
+            <img style="width:280px" src="demo4.gif"/>
+          </td>
+          <td>
+            <img style="width:280px" src="demo5.gif"/>
+          </td>
+          <td>
+            <img style="width:280px" src="demo6.gif"/>
+          </td>
+      </tr>
+
+        <tr>
+          <td align=center><br>
+            <span style="font-size:24px">&nbsp;<a href='#'>[Sample #1]</a>
+          </td>
+          <td align=center><br>
+            <span style="font-size:24px">&nbsp;<a href='#'>[Sample #2]</a>
+          </td>
+          <td align=center><br>
+            <span style="font-size:24px">&nbsp;<a href='#'>[Full data]</a>
+          </td>
+        <tr>
+        <tr>
+          <td colspan="3"> <br>
+            Existing real datasets of human motion in the wild provide relatively noisy 3D human poses. This motivates us to collect a synthetic dataset with clean annotations and large diversity in appearances, views, and motions: 10 different large house models, 13 weathers, 50 human models, 22 walking styles, and various actions.
+Our dataset contains is useful for pretraining which improves performance in real dataset, and essential for rigorious comparison due to its clean annotations.
+Compared to previous efforts to generate synthetic datasets, we spent extensive effort in creating an interface with the game engine in order to control characters, cameras, and action tasks in a fully automatic pipeline.
+          </td>
+        </tr>
+      </table>
+    <br>
+
+    <hr>
+      <table align=center width=800>
+       <center><h1>Paper</h1></center>
+          <tr>
+            <td><a href="preprint.pdf"><img style="width:400px" src="thumbnail.png"/></a></td>
+            <td><span style="font-size:14pt">Cao, Gao, Mangalam, Cai, Vo, Malik.<br><br>
+              Long-term Human Motion Prediction<br> with Scene Context<br><br>
+            Preprint, 2020.<br><br>
+                <a href="preprint.pdf">[Paper]</a> &nbsp; &nbsp;
+                <a href="supplement.pdf">[Supplement]</a> &nbsp; &nbsp;
+                <a href="bibtex.txt">[Bibtex]</a>
+            <!-- [hosted on <a href="#">arXiv</a>]</a> -->
+              </td>
+        </tr>
+      </table>
+    <br>
+    <!--
+    <hr>
+      <center><h1>Code</h1></center>
+      <tr>
+        <td>
+          <span style="font-size:28px">&nbsp;<a href='#'>[GitHub]</a>  (coming soon)
+        </td>
+      <br>
+      -->
+      <hr>
+            <table align=center width=1100px>
+                <tr>
+                    <td>
+                      <left>
+                <center><h1>Acknowledgements</h1></center>
+                We thank members of the BAIR community for helpful discussions and comments. This webpage template was borrowed from some <a href="https://richzhang.github.io/colorization/">colorful folks</a>.
+            </left>
+        </td>
+        </tr>
+        </table>
+
+        <br><br>
+</body>
+</html>
