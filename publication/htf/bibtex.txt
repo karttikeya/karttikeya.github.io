@@ -1,0 +1,11 @@
+@incollection{caoHMP2020,
+  author = {Zhe Cao and
+  Hang Gao and
+  Karttikeya Mangalam and
+  Qizhi Cai and
+  Minh Vo and
+  Jitendra Malik},
+  title = {Long-term human motion prediction with scene context},
+  booktitle = Arxiv,
+  year = {2020},
+  }
