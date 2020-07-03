@@ -113,15 +113,15 @@
 
 <html>
   <head>
-        <title>Long-term Human Motion Prediction with Scene Context</title>
+        <title>It Is Not the Journey but the Destination: Endpoint Conditioned Trajectory Prediction</title>
         <meta property="og:title" content="sceneflow" />
-        <meta property="og:url" content="https://www.youtube.com/watch?v=cYHQKtBLI3Q" />
+        <!-- <meta property="og:url" content="https://www.youtube.com/watch?v=cYHQKtBLI3Q" /> -->
   </head>
 
   <body>
     <br>
     <center>
-    <span style="font-size:42px">Long-term Human Motion Prediction with Scene Context </span>
+    <span style="font-size:42px">It Is Not the Journey but the Destination: <br> Endpoint Conditioned Trajectory Prediction </span>
 
     <!--
     </center>
@@ -181,12 +181,13 @@
    -->
 
      <tr>
-       <span style="font-size:22px"><a href="https://people.eecs.berkeley.edu/~zhecao/">Zhe Cao</a></span><sup>1</sup>,&nbsp;&nbsp;
-      <span style="font-size:22px"><a href="https://people.eecs.berkeley.edu/~hangg/">Hang Gao</a></span><sup>1</sup>,&nbsp;&nbsp;
-      <span style="font-size:22px"><a href="https://karttikeya.github.io/">Karttikeya Mangalam</a></span><sup>1</sup>,&nbsp;&nbsp;
-      <span style="font-size:22px"><a href="https://scholar.google.com/citations?user=oyh-YNwAAAAJ&hl=en">Qi-Zhi Cai</a></span><sup>2</sup>,&nbsp;&nbsp;
-      <span style="font-size:22px"><a href="https://minhpvo.github.io/">Minh Vo</a></span><sup>3</sup>,&nbsp;&nbsp;
-      <span style="font-size:22px"><a href="http://www.eecs.berkeley.edu/~malik/">Jitendra Malik</a></span><sup>1</sup>
+       <span style="font-size:22px"><a href="https://karttikeya.github.io/">Karttikeya Mangalam</a></span><sup>1</sup>,&nbsp;&nbsp;
+      <span style="font-size:22px"><a href="https://www.linkedin.com/in/harshayu-girase-764b06153">Harshayu Girase</a></span><sup>1</sup>,&nbsp;&nbsp;
+      <span style="font-size:22px"><a href="https://www.linkedin.com/in/shreyas-agarwal-086267146">Shreyas Agarwal</a></span><sup>1</sup>,&nbsp;&nbsp;
+      <span style="font-size:22px"><a href="https://scholar.google.com/citations?user=oyh-YNwAAAAJ&hl=en">Kuan-Hui Lee</a></span><sup>2</sup>,&nbsp;&nbsp;
+      <span style="font-size:22px"><a href="https://www.linkedin.com/in/kuan-hui-lee-23730370">Ehsan Adeli</a></span><sup>3</sup><br>
+      <span style="font-size:22px"><a href="https://web.stanford.edu/~eadeli/">Prof. Jitendra Malik</a></span><sup>1</sup>, &nbsp;&nbsp;
+      <span style="font-size:22px"><a href="https://www.linkedin.com/in/adrien-gaidon-63ab2358/">Adrien Gaidon</a></span><sup>2</sup>
    </tr>
 
      <tr>
@@ -198,13 +199,13 @@
 
       <td align=center colspan="2" style="font-size:22px">
       <center>
-      <sup>2</sup>Nanjing University
+      <sup>2</sup>Toyota Research Institute
       </center>
       </td>
 
       <td align=center colspan="2" style="font-size:22px">
       <center>
-      <sup>3</sup>Facebook Reality Lab
+      <sup>3</sup>Stanford University
       </center>
       </td>
       </tr>
@@ -231,36 +232,64 @@
 
 
           <hr> -->
-          <br>
-          <br>
-          <center>
+<!--           <br>
+          <br> -->
+<!--           <center>
             <table align=center width=700>
                 <tr>
+              
                   <td><video width="700px" controls> <source src="hmp.m4v" type=video/mp4><video></td>
+              
               </tr>
             </table>
-          </center>
+          </center> -->
+          
           <br>
 
-          <hr>
+          <!-- <hr> -->
           <center><h1>Abstract</h1></center>
-          <table align=center width=600px>
+          <table align=center width=1000px>
               <tr>
-                  <td width=700px>
-                    <center>
-                        <img src = "teaser.jpg" height="180px"></img><br>
-                  </center>
+                  <td width=1000px>
+<!--                     <center>
+                        <img src = "teaser.jpg" height="500px"></img><br>
+                  </center> -->
+                  <br>
+                  <span style="font-size:20px"> Human trajectory forecasting with multiple socially interacting agents is of critical importance for autonomous navigation in human
+environments, e.g., for self-driving cars and social robots. In this work, we
+present Predicted Endpoint Conditioned Network (PECNet) for flexible
+human trajectory prediction. PECNet infers distant trajectory endpoints
+to assist in long-range multi-modal trajectory prediction. A novel nonlocal social pooling layer enables PECNet to infer diverse yet socially compliant trajectories. Additionally, we present a simple “truncation trick” for improving few-shot multi-modal trajectory prediction performance. We show that PECNet improves state-of-the-art performance on the Stanford Drone prediction benchmark by ∼19.5% & on the ETH/UCY benchmark by ∼40.8%.
                   </td>
               </tr>
 
               <tr>
                 <td colspan="3"> <br>
-                  Human movement is goal-directed and influenced by the spatial layout of the objects in the scene. To plan future human motion, it is crucial to perceive the environment -- imagine how hard it is to navigate a new room with lights off.
-                  Existing works on predicting human motion do not pay attention to the scene context and thus struggle in long-term prediction.
-                  In this work, we propose a novel three-stage framework that exploits scene context to tackle this task, as shown in the above image.
-                  Given a single scene image and 2D pose histories, our method first samples multiple human motion goals, then plans 3D human paths towards each goal, and finally predicts 3D human pose sequences following each path.
-                  For stable training and rigorous evaluation, we contribute a diverse synthetic dataset with clean annotations.
-                  In both synthetic and real datasets, our method shows consistent quantitative and qualitative improvements over existing methods.
+
+                </td>
+              </tr>
+          </table>
+
+
+          <hr>
+          <center><h1>Key Ideas</h1></center>
+          <table align=center width=600px>
+              <tr>
+                  <td width=700px>
+                    <center>
+                        <img src = "teaser.jpg" height="500px"></img><br>
+                  </center>
+                  <br>
+                  <span style="font-size:18px"> <b>Imitating the Human Path Planning Process</b>: We posit that pedestrians in the scene move towards a predetermined position and interactions such as social signalling shape their trajectories only locally while they still go along achieving their original intention. Instantiating this idea, we propose 
+                  to model the pedestrian trajectory prediction problem (top left) by breaking down the task in two sequential steps that are learned end to end. (a) Inferring the local endpoint distribution (top right) for diverse endpoint sampling for each agent independently; and then (b) Conditioning on sampled future endpoints (bottom left) for planning socially compliant trajectories for all the agents in the scene jointly (bottom right).
+                  </td>
+              </tr>
+<!-- 
+We posit that pedestrians in the scene move towards a predetermined position and interactions such as social cues happen as they go along achieving this intention without changing the predilection while still shaping their trajectories locally. 
+               -->
+              <tr>
+                <td colspan="3"> <br>
+
                 </td>
               </tr>
           </table>
@@ -268,16 +297,16 @@
 
         <hr>
          <!-- <table align=center width=550px> -->
-                <center><h1>Results</h1></center>
+                <center><h1>Multimodal Results</h1></center>
                 <table align=center width=900px>
                     <tr>
                         <td width=1200px colspan="3">
                           <center>
-                              <img src = "results.jpg" height="900px"></img><br>
+                              <img src = "multimodal.png" height="540px"></img><br>
                         </center>
                         </td>
                     </tr>
-                    <tr>
+<!--                     <tr>
                       <td align=center width=400px>
                         (a)
                       </td>
@@ -287,74 +316,73 @@
                       <td align=center width=400px>
                         (c)
                       </td>
-                  </tr>
+                  </tr> -->
 
                     <tr>
                         <td width=600px colspan="3">
-                              <span style="font-size:14px"><i>Qualitative results of our method. (a) input: short-term 2D human pose sequence and a single RGB image, (b-c): future human motion predictions with consideration of the scene context. We visualize 3D human poses in ground-truth point cloud and change the color gradually from purple to dark blue, and eventually light blue across time steps. The top two rows show our three-second-long prediction results in GTA-IM dataset and the bottom two rows show our two-second-long prediction results in PROX dataset. To best visualize the 3D poses, we may rotate the camera viewpoint slightly for visualizing the two predictions from the same input sequence. Our method can generate diverse human motion, e.g., turning left/right, walking straight, taking a u-turn, climbing stairs, standing up from sitting, and laying back on the sofa. </i>
+                                            <br>
+                              <span style="font-size:18px"><b> Visualizing Multimodality Predictions:</b> Qualitative results for diverse multi-modal predictions produced by PECNet on the <a href="https://cvgl.stanford.edu/projects/uav_data/"> Stanford Drone Dataset</a>. White represents the past 3.2 seconds trajectory (8 frames) while  red  &  cyan  represents  predicted  &  ground  truth  future  respectively  over  next 4.8 seconds (12 frames). As demonstrated, PECNet predictions capture a wide-range of plausible trajectory behaviours while discarding improbable ones such as endpoints incompatible with the direction of motion. 
                         </td>
                     </tr>
                 </table>
                 <br>
       <hr>
       <table align=center width=800>
-       <center><h1>GTA-IM Dataset</h1></center>
+       <center><h1>Socially Compliant Diverse Predictions</h1></center>
           <tr class="spaceUnder">
             <td>
-              <img style="width:280px" src="demo1.gif"/>
+              <img style="width:280px" src="gt2.gif"/>
             </td>
             <td>
-              <img style="width:280px" src="demo2.gif"/>
+              <img style="width:280px" src="pred2.gif"/>
             </td>
             <td>
-              <img style="width:280px" src="demo3.gif"/>
-            </td>
+            <img style="width:280px" src="viz2.gif"/>
+          </td>
         </tr>
 
         <tr>
           <td>
-            <img style="width:280px" src="demo4.gif"/>
+            <img style="width:280px" src="gt3.gif"/>
           </td>
           <td>
-            <img style="width:280px" src="demo5.gif"/>
+            <img style="width:280px" src="pred3.gif"/>
           </td>
           <td>
-            <img style="width:280px" src="demo6.gif"/>
+            <img style="width:280px" src="viz3.gif"/>
           </td>
       </tr>
 
         <tr>
           <td align=center><br>
-            <span style="font-size:24px">&nbsp;<a href='#'>[Sample #1]</a>
+            <span style="font-size:24px">&nbsp;<a href='#'>Ground Truth</a>
           </td>
           <td align=center><br>
-            <span style="font-size:24px">&nbsp;<a href='#'>[Sample #2]</a>
+            <span style="font-size:24px">&nbsp;<a href='#'>Final Predictions</a>
           </td>
           <td align=center><br>
-            <span style="font-size:24px">&nbsp;<a href='#'>[Full data]</a>
+            <span style="font-size:24px">&nbsp;<a href='#'>Multimodal Predictions</a>
           </td>
         <tr>
         <tr>
           <td colspan="3"> <br>
-            Existing real datasets of human motion in the wild provide relatively noisy 3D human poses. This motivates us to collect a synthetic dataset with clean annotations and large diversity in appearances, views, and motions: 10 different large house models, 13 weathers, 50 human models, 22 walking styles, and various actions.
-Our dataset contains is useful for pretraining which improves performance in real dataset, and essential for rigorious comparison due to its clean annotations.
-Compared to previous efforts to generate synthetic datasets, we spent extensive effort in creating an interface with the game engine in order to control characters, cameras, and action tasks in a fully automatic pipeline.
+            <span style="font-size:18px"><b> Qualitative Results at Mergers & Intersection:</b> We demonstrate PECNet's socially compliant & diverse trajectories in multi-agent settings in tricky scenarios such as path merger (top row) or collision avoidance at lane intersections (bottom row). The left column denotes the ground truth trajectories from Stanford Drone Dataset and the middle and left columns denote our predictions. For ground truth/final predictions, circles denote the past input fed into PECNet, while stars denote the future to be predicted/predicted with tails denoting the last four observed positions for both. Our "best" predictions follow the ground truth closely while effectively avoid collisions with other pedestrians in a natural seamless way. While PECNet's multimodal predictions produces diverse socially compliant trajectories jointly for all the pedestrians in the scene (extended temporally for visualization using recurrent prediction). For quantitative results please see <a href="https://arxiv.org/pdf/2004.02025.pdf">our paper</a>.  
           </td>
         </tr>
       </table>
     <br>
 
     <hr>
-      <table align=center width=800>
+      <table align=center width=900>
        <center><h1>Paper</h1></center>
           <tr>
-            <td><a href="preprint.pdf"><img style="width:400px" src="thumbnail.png"/></a></td>
-            <td><span style="font-size:14pt">Cao, Gao, Mangalam, Cai, Vo, Malik.<br><br>
-              Long-term Human Motion Prediction<br> with Scene Context<br><br>
-            Preprint, 2020.<br><br>
-                <a href="preprint.pdf">[Paper]</a> &nbsp; &nbsp;
-                <a href="supplement.pdf">[Supplement]</a> &nbsp; &nbsp;
-                <a href="bibtex.txt">[Bibtex]</a>
+            <td><a href="https://arxiv.org/pdf/2004.02025.pdf"><img align=center style="width:400px" src="paper_collage.png"/></a></td>
+            <td><span style="font-size:14pt">Mangalam, Girase, Agarwal, Lee, <br> Adeli, Malik, Gaidon.<br><br>
+              It Is Not the Journey but the Destination: Endpoint Conditioned Trajectory Prediction<br><br>
+            ECCV 2020  <a href = "https://eccv2020.eu/"> <b> (Oral) </b> </a><br><br>
+                <a href="https://arxiv.org/pdf/2004.02025.pdf">[Paper]</a> &nbsp; &nbsp;
+                <a href="bibtex.txt">[Bibtex]</a> &nbsp; &nbsp;
+                [Github] (Code Coming Soon)
             <!-- [hosted on <a href="#">arXiv</a>]</a> -->
               </td>
         </tr>
@@ -370,12 +398,12 @@ Compared to previous efforts to generate synthetic datasets, we spent extensive 
       <br>
       -->
       <hr>
-            <table align=center width=1100px>
+            <table align=center width=950px>
                 <tr>
                     <td>
                       <left>
                 <center><h1>Acknowledgements</h1></center>
-                We thank members of the BAIR community for helpful discussions and comments. This webpage template was borrowed from some <a href="https://richzhang.github.io/colorization/">colorful folks</a>.
+                We thank <span style="font-size:14px"><a href="https://scholar.google.com/citations?user=oyh-YNwAAAAJ&hl=en">Prof. Juan Carlos Niebles</a></span> for helpful advice and suggestions. This webpage template was borrowed from some <a href="https://richzhang.github.io/colorization/">colorful folks</a>.
             </left>
         </td>
         </tr>
