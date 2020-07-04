@@ -52,11 +52,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="https://karttikeya.github.io/publication/future-localization/">
+  <link rel="canonical" href="https://karttikeya.github.io/publication/human-motion-scene/">
 
   
 
-  <title>Future Person Localization in First-Person Videos | Karttikeya Mangalam</title>
+  <title>Long-term Human Motion Prediction with Scene Context | Karttikeya Mangalam</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -153,18 +153,13 @@
 <div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
 
   
-<div class="article-header">
-  <img src="/img/ymys.png" class="article-banner" itemprop="image">
-  
-</div>
-
 
 
   <div class="container pub-title">
-    <h1 itemprop="name">Future Person Localization in First-Person Videos</h1>
+    <h1 itemprop="name">Long-term Human Motion Prediction with Scene Context</h1>
     <span class="pub-authors" itemprop="author">
       
-      Takuma Yagi, Karttikeya Mangalam, Prof. Ryo Yonetani, Prof. Yoichi Sato
+      <a href="https://people.eecs.berkeley.edu/~zhecao/" target="_blank">Zhe Cao</a>, <a href="https://people.eecs.berkeley.edu/~hangg/" target="_blank">Hang Gao</a>, <a href="http://karttikeya.github.io/" target="_blank">Karttikeya Mangalam</a>, <a href="https://scholar.google.com/citations?user=oyh-YNwAAAAJ&amp;hl=en" target="_blank">Qi-Zhi Cai</a>, <a href="https://minhpvo.github.io/" target="_blank">Minh Vo</a>, <a href="http://www.eecs.berkeley.edu/~malik/" target="_blank">Jitendra Malik</a>
       
     </span>
     <span class="pull-right">
@@ -173,35 +168,35 @@
   <ul class="share">
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fkarttikeya.github.io%2fpublication%2ffuture-localization%2f"
+         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fkarttikeya.github.io%2fpublication%2fhuman-motion-scene%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Future%20Person%20Localization%20in%20First-Person%20Videos&amp;url=https%3a%2f%2fkarttikeya.github.io%2fpublication%2ffuture-localization%2f"
+         href="https://twitter.com/intent/tweet?text=Long-term%20Human%20Motion%20Prediction%20with%20Scene%20Context&amp;url=https%3a%2f%2fkarttikeya.github.io%2fpublication%2fhuman-motion-scene%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fkarttikeya.github.io%2fpublication%2ffuture-localization%2f&amp;title=Future%20Person%20Localization%20in%20First-Person%20Videos"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fkarttikeya.github.io%2fpublication%2fhuman-motion-scene%2f&amp;title=Long-term%20Human%20Motion%20Prediction%20with%20Scene%20Context"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fkarttikeya.github.io%2fpublication%2ffuture-localization%2f&amp;title=Future%20Person%20Localization%20in%20First-Person%20Videos"
+         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fkarttikeya.github.io%2fpublication%2fhuman-motion-scene%2f&amp;title=Long-term%20Human%20Motion%20Prediction%20with%20Scene%20Context"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Future%20Person%20Localization%20in%20First-Person%20Videos&amp;body=https%3a%2f%2fkarttikeya.github.io%2fpublication%2ffuture-localization%2f">
+         href="mailto:?subject=Long-term%20Human%20Motion%20Prediction%20with%20Scene%20Context&amp;body=https%3a%2f%2fkarttikeya.github.io%2fpublication%2fhuman-motion-scene%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -218,7 +213,7 @@
   
 
   <h3>Abstract</h3>
-  <p class="pub-abstract" itemprop="text">We present a new task that predicts future locations of people observed in first-person videos. Consider a first-person video stream continuously recorded by a wearable camera. Given a short clip of a person that is extracted from the complete stream, we aim to predict his location in future frames. To facilitate this future person localization ability, we make the following three key observations: a) First-person videos typically involve significant ego-motion which greatly affects the location of the target person in future frames; b) Scale of the target person act as a salient cue to estimate a perspective effect in first-person videos; c) First-person videos often capture people up-close, making it easier to leverage target poses (e.g. where they look) for predicting their future locations. We incorporate these three observations into a prediction framework with a multi-stream convolution-deconvolution architecture. Experimental results reveal our method to be effective on our new dataset as well as on a public social interaction dataset.</p>
+  <p class="pub-abstract" itemprop="text">Human movement is goal-directed and influenced by the spatial layout of the objects in the scene. To plan future human motion, it is crucial to perceive the environment – imagine how hard it is to navigate a new room with lights off. Existing works on predicting human motion do not pay attention to the scene context and thus struggle in long-term prediction. In this work, we propose a novel three-stage framework that exploits scene context to tackle this task. Given a single scene image and 2D pose histories, our method first samples multiple human motion goals, then plans 3D human paths towards each goal, and finally predicts 3D human pose sequences following each path. For stable training and rigorous evaluation, we contribute a diverse synthetic dataset with clean annotations. In both synthetic and real datasets, our method shows consistent quantitative and qualitative improvements over existing methods.</p>
 
   
   <div class="row">
@@ -245,7 +240,7 @@
     <div class="col-sm-10">
       <div class="row">
         <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
-        <div class="col-xs-12 col-sm-9">Computer Vision and Pattern Recognition 2018 <font color=“#f00fff” size = 3.8> (Spotlight) </font></div>
+        <div class="col-xs-12 col-sm-9">European Conference on Computer Vision 2020 <font color=“#f00fff” size = 3.8> (Oral) </font></div>
       </div>
     </div>
     <div class="col-sm-1"></div>
@@ -258,7 +253,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
         <div class="col-xs-12 col-sm-9" itemprop="datePublished">
-          June, 2018
+          May, 2020
         </div>
       </div>
     </div>
@@ -278,18 +273,26 @@
 
 
 
-<a class="btn btn-primary btn-outline" href="https://arxiv.org/abs/1711.11217">
+<a class="btn btn-primary btn-outline" href="https://people.eecs.berkeley.edu/~zhecao/hmp/preprint.pdf">
   PDF
 </a>
 
 
 
+<a class="btn btn-primary btn-outline" href="https://people.eecs.berkeley.edu/~zhecao/hmp/hmp.m4v">
+  Video
+</a>
 
-<a class="btn btn-primary btn-outline" href="https://github.com/takumayagi/future_localization">
+
+<a class="btn btn-primary btn-outline" href="https://github.com/ZheC/GTA-IM-Dataset">
   Code
 </a>
 
 
+
+<a class="btn btn-primary btn-outline" href="https://people.eecs.berkeley.edu/~zhecao/hmp/">
+  Project
+</a>
 
 
 
@@ -311,12 +314,12 @@
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="https://karttikeya.github.io/publication/emotion-spontaneity/"><span
-      aria-hidden="true">&larr;</span> Learning Spontaneity to Improve Emotion Recognition in Speech</a></li>
+    <li class="previous"><a href="https://karttikeya.github.io/publication/plf/"><span
+      aria-hidden="true">&larr;</span> Disentangling Human Dynamics for Pedestrian Locomotion Forecasting with Noisy Supervision</a></li>
     
 
     
-    <li class="next"><a href="https://karttikeya.github.io/publication/plf/">Disentangling Human Dynamics for Pedestrian Locomotion Forecasting with Noisy Supervision <span
+    <li class="next"><a href="https://karttikeya.github.io/publication/htf/">It Is Not the Journey but the Destination: Endpoint Conditioned Trajectory Prediction <span
       aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
