@@ -5,6 +5,15 @@
     
     <url>
     
+      <loc>https://karttikeya.github.io/project/dmat/</loc>
+      <lastmod>2020-10-02T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://karttikeya.github.io/publication/htf/</loc>
       <lastmod>2020-06-03T13:48:06+09:00</lastmod>
     </url>
@@ -197,7 +206,7 @@
     <url>
     
       <loc>https://karttikeya.github.io/tags/cv/</loc>
-      <lastmod>2018-01-07T00:00:00+00:00</lastmod>
+      <lastmod>2020-10-02T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -226,6 +235,14 @@
     
     <url>
     
+      <loc>https://karttikeya.github.io/publication/dmat/</loc>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>https://karttikeya.github.io/tags/ml/</loc>
       <lastmod>2017-07-17T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -247,7 +264,7 @@
     <url>
     
       <loc>https://karttikeya.github.io/project/</loc>
-      <lastmod>2018-01-07T00:00:00+00:00</lastmod>
+      <lastmod>2020-10-02T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -267,7 +284,7 @@
     <url>
     
       <loc>https://karttikeya.github.io/tags/ri/</loc>
-      <lastmod>2018-01-07T00:00:00+00:00</lastmod>
+      <lastmod>2020-10-02T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
