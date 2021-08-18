@@ -1,0 +1,6 @@
+@article{mangalam2020not,
+  title={It Is Not the Journey but the Destination: Endpoint Conditioned Trajectory Prediction},
+  author={Mangalam, Karttikeya and Girase, Harshayu and Agarwal, Shreyas and Lee, Kuan-Hui and Adeli, Ehsan and Malik, Jitendra and Gaidon, Adrien},
+  journal={arXiv preprint arXiv:2004.02025},
+  year={2020}
+}
