@@ -140,6 +140,10 @@ figcaption h4 {
   font-weight: 400;
   margin: 0;
 }
+em {
+   font-weight: bold;
+   font-style: normal;
+}
 
 pre,
 code {
@@ -160,10 +164,8 @@ hr {
 
 /* Quotes */
 blockquote {
-  padding: .5rem 1rem;
-  margin: .8rem 0;
-  color: #7a7a7a;
-  border-left: .25rem solid #e5e5e5;
+  font-weight: bold;
+  font-style: normal;
 }
 blockquote p:last-child {
   margin-bottom: 0;

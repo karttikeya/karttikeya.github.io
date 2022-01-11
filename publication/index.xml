@@ -6,11 +6,83 @@
     <description>Recent content in Publications on Karttikeya Mangalam</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>&amp;copy; 2020 Karttikeya Mangalam</copyright>
+    <copyright>&amp;copy; 2022 Karttikeya Mangalam</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://karttikeya.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Reversible Vision Transformers</title>
+      <link>https://karttikeya.github.io/publication/revvit/</link>
+      <pubDate>Mon, 10 Jan 2022 18:48:06 +0900</pubDate>
+      
+      <guid>https://karttikeya.github.io/publication/revvit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MeMViT: Memory-Augmented Multiscale Vision Transformer for Efficient Long-Term Video Recognition</title>
+      <link>https://karttikeya.github.io/publication/memvit/</link>
+      <pubDate>Sun, 02 Jan 2022 18:48:06 +0900</pubDate>
+      
+      <guid>https://karttikeya.github.io/publication/memvit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Improved Multiscale Vision Transformers for Classification and Detection</title>
+      <link>https://karttikeya.github.io/publication/mvitnew/</link>
+      <pubDate>Wed, 01 Dec 2021 18:48:06 +0900</pubDate>
+      
+      <guid>https://karttikeya.github.io/publication/mvitnew/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>From Goals, Waypoints &amp; Paths To Long Term Human Trajectory Forecasting</title>
+      <link>https://karttikeya.github.io/publication/ynet/</link>
+      <pubDate>Tue, 20 Jul 2021 19:48:06 +0900</pubDate>
+      
+      <guid>https://karttikeya.github.io/publication/ynet/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multiscale Vision Transformers</title>
+      <link>https://karttikeya.github.io/publication/mvit/</link>
+      <pubDate>Tue, 20 Jul 2021 18:48:06 +0900</pubDate>
+      
+      <guid>https://karttikeya.github.io/publication/mvit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LOKI: Long Term and Key Intentions for Trajectory Prediction</title>
+      <link>https://karttikeya.github.io/publication/loki/</link>
+      <pubDate>Tue, 20 Jul 2021 17:48:06 +0900</pubDate>
+      
+      <guid>https://karttikeya.github.io/publication/loki/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Overcoming Mode Collapse with Adaptive Multi Adversarial Training</title>
+      <link>https://karttikeya.github.io/publication/amat/</link>
+      <pubDate>Sun, 20 Jun 2021 17:48:06 +0900</pubDate>
+      
+      <guid>https://karttikeya.github.io/publication/amat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Object-Region Video Transformers</title>
+      <link>https://karttikeya.github.io/publication/orvit/</link>
+      <pubDate>Sun, 20 Jun 2021 16:48:06 +0900</pubDate>
+      
+      <guid>https://karttikeya.github.io/publication/orvit/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>It Is Not the Journey but the Destination: Endpoint Conditioned Trajectory Prediction</title>
@@ -70,19 +142,10 @@ Please cite using following bibtex: @inproceedings{mangalam2020disentangling, ti
     
     <item>
       <title>Bitwise Operations of Cellular Automaton on Gray-scale Images</title>
-      <link>https://karttikeya.github.io/publication/bitwise-operations-of-cellular-automaton-on-grayscale-images---copy/</link>
+      <link>https://karttikeya.github.io/publication/bitwise-operations-of-cellular-automaton-on-grayscale-images/</link>
       <pubDate>Sat, 18 Jun 2016 18:48:06 +0900</pubDate>
       
-      <guid>https://karttikeya.github.io/publication/bitwise-operations-of-cellular-automaton-on-grayscale-images---copy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mitigating Mode Collapse by Sidestepping Catastrophic Forgetting</title>
-      <link>https://karttikeya.github.io/publication/dmat/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://karttikeya.github.io/publication/dmat/</guid>
+      <guid>https://karttikeya.github.io/publication/bitwise-operations-of-cellular-automaton-on-grayscale-images/</guid>
       <description></description>
     </item>
     
