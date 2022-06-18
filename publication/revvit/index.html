@@ -1,336 +1,436 @@
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.49" />
-  <meta name="author" content="Karttikeya Mangalam">
-  <meta name="description" content="PhD Student in Computer Science (BAIR) Visiting Researcher at Meta AI Research">
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
 
-  
-  
-  
+<style type="text/css">
+    body {
+        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+        font-weight:300;
+        font-size:18px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1100px;
+    }
+
+    h1 {
+        font-weight:300;
+    }
+
+    .disclaimerbox {
+        background-color: #eee;
+        border: 1px solid #eeeeee;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+        padding: 20px;
+    }
+
+    video.header-vid {
+        height: 140px;
+        border: 1px solid black;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+    }
+
+    img.header-img {
+        height: 140px;
+        border: 1px solid black;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+    }
+
+    img.rounded {
+        border: 1px solid #eeeeee;
+        border-radius: 10px ;
+        -moz-border-radius: 10px ;
+        -webkit-border-radius: 10px ;
+    }
+
+    a:link,a:visited
+    {
+        color: #1367a7;
+        text-decoration: none;
+    }
+    a:hover {
+        color: #208799;
+    }
+
+    td.dl-link {
+        height: 160px;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    tr.spaceUnder>td {
+        padding-bottom: 10px;
+    }
+    .layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+        box-shadow:
+                0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+                5px 5px 0 0px #fff, /* The second layer */
+                5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+                10px 10px 0 0px #fff, /* The third layer */
+                10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+                15px 15px 0 0px #fff, /* The fourth layer */
+                15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+                20px 20px 0 0px #fff, /* The fifth layer */
+                20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+                25px 25px 0 0px #fff, /* The fifth layer */
+                25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+        margin-left: 10px;
+        margin-right: 45px;
+    }
+
+
+    .layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+        box-shadow:
+                0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+                5px 5px 0 0px #fff, /* The second layer */
+                5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+                10px 10px 0 0px #fff, /* The third layer */
+                10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-right: 30px;
+        margin-bottom: 5px;
+    }
+
+    .vert-cent {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    hr
+    {
+        border: 0;
+        height: 1.5px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    }
+</style>
+
+<html>
+  <head>
+        <title>Reversible Vision Tranformers</title>
+        <meta property="og:title" content="sceneflow" />
+        <!-- <meta property="og:url" content="https://www.youtube.com/watch?v=cYHQKtBLI3Q" /> -->
+  </head>
+
+  <body>
+    <br>
+    <center>
+    <span style="font-size:42px">Reversible Vision Tranformers</span>
+
+
+    <!-- </center> -->
     
-  
-  
-    
-    
-    <link rel="stylesheet" href="/css/highlight.min.css">
-    
-  
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.0/css/academicons.min.css" integrity="sha512-GGGNUPDhnG8LEAEDsjqYIQns+Gu8RBs4j5XGlxl7UfRaZBhCCm5jenJkeJL8uPuOXGqgl8/H1gjlWQDRjd3cUQ==" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
-  
-  
-  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono">
-  <link rel="stylesheet" href="/css/hugo-academic.css">
-  
+    <br>
+    <br>
+      <table align=center width=800px>
 
-  
-    <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'UA-163319156-1', 'auto');
-      ga('require', 'eventTracker');
-      ga('require', 'outboundLinkTracker');
-      ga('require', 'urlChangeTracker');
-      ga('send', 'pageview');
-    </script>
-    <script async src="//www.google-analytics.com/analytics.js"></script>
-    
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
-    
-  
+      <!--
+       <tr>
+         <td align=center width=100px>
+         <center>
+         <span style="font-size:16px"><a href="https://people.eecs.berkeley.edu/~zhecao/">Zhe Cao</a></span><sup>1</sup>
+         </center>
+         </td>
 
-  <link rel="alternate" href="https://karttikeya.github.io/index.xml" type="application/rss+xml" title="Karttikeya Mangalam">
-  <link rel="feed" href="https://karttikeya.github.io/index.xml" type="application/rss+xml" title="Karttikeya Mangalam">
+        <td align=center width=100px>
+        <center>
+        <span style="font-size:16px"><a href="https://people.eecs.berkeley.edu/~hangg/">Hang Gao</a></span><sup>1</sup>
+        </center>
+        </td>
 
-  <link rel="icon" type="image/png" href="/img/icon.png">
-  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+        <td align=center width=150px>
+        <center>
+        <span style="font-size:16px"><a href="https://karttikeya.github.io/">Karttikeya Mangalam</a></span><sup>1</sup>
+        </center>
+        </td>
 
-  <link rel="canonical" href="https://karttikeya.github.io/publication/revvit/">
+        <td align=center width=100px>
+        <center>
+        <span style="font-size:16px"><a href="https://scholar.google.com/citations?user=oyh-YNwAAAAJ&hl=en">Qi-Zhi Cai</a></span><sup>2</sup>
+        </center>
+        </td>
 
-  
+        <td align=center width=100px>
+        <center>
+        <span style="font-size:16px"><a href="https://minhpvo.github.io/">Minh Vo</a></span><sup>3</sup>
+        </center>
+        </td>
 
-  <title>Reversible Vision Transformers | Karttikeya Mangalam</title>
+        <td align=center width=100px>
+        <center>
+        <span style="font-size:16px"><a href="http://www.eecs.berkeley.edu/~malik/">Jitendra Malik</a></span><sup>1</sup>
+        </center>
+        </td>
+     </tr>
+   -->
 
-</head>
-<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
-
-<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
-  <div class="container">
-
-    
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-              data-target=".navbar-collapse" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/">Karttikeya Mangalam</a>
-    </div>
-
-    
-    <div class="collapse navbar-collapse">
-
-      
-      <ul class="nav navbar-nav navbar-right">
-        
-
-        
-
-        <li class="nav-item">
-          <a href="/#about">
-            
-            <span>Home</span>
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        <li class="nav-item">
-          <a href="/#publications_selected">
-            
-            <span>Publications</span>
-          </a>
-        </li>
-
-        
-        
-
-        
-
-        <li class="nav-item">
-          <a href="/#projects">
-            
-            <span>Projects</span>
-          </a>
-        </li>
-
-        
-        
-
-        
-      </ul>
-
-    </div>
-  </div>
-</nav>
-
-<div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
-
-  
+     <tr>
+       <span style="font-size:22px"><a href="https://karttikeya.github.io/">Karttikeya Mangalam</a></span><sup>1</sup>,&nbsp;&nbsp;
+      <span style="font-size:22px"><a href="https://www.linkedin.com/in/harshayu-girase-764b06153">Harshayu Girase</a></span><sup>1</sup>,&nbsp;&nbsp;
+      <span style="font-size:22px"><a href="https://www.linkedin.com/in/shreyas-agarwal-086267146">Shreyas Agarwal</a></span><sup>1</sup>,&nbsp;&nbsp;
+      <span style="font-size:22px"><a href="https://www.linkedin.com/in/kuan-hui-lee-23730370">Kuan-Hui Lee</a></span><sup>2</sup>,&nbsp;&nbsp;
+      <span style="font-size:22px"><a href="https://web.stanford.edu/~eadeli/">Ehsan Adeli</a></span><sup>3</sup><br>
+      <span style="font-size:22px"><a href="https://people.eecs.berkeley.edu/~malik/">Prof. Jitendra Malik</a></span><sup>1</sup>, &nbsp;&nbsp;
+      <span style="font-size:22px"><a href="https://www.linkedin.com/in/adrien-gaidon-63ab2358/">Adrien Gaidon</a></span><sup>2</sup>
+   </tr>
 
 
-  <div class="container pub-title">
-    <h1 itemprop="name">Reversible Vision Transformers</h1>
-    <span class="pub-authors" itemprop="author">
-      
-      <a href="http://karttikeya.github.io/" target="_blank"><font color=“#000000”>Karttikeya Mangalam<sup>&spades;</sup></font></a>, <a href="https://haoqifan.github.io/" target="_blank">Haoqi Fan</a>, <a href="https://lyttonhao.github.io/" target="_blank">Yanghao Li</a>, <a href="https://chaoyuan.org/" target="_blank">Chao-Yuan Wu</a>, <a href="https://scholar.google.com/citations?user=ZFW98t4AAAAJ&amp;hl=en" target="_blank">Bo Xiong</a>, <a href="https://feichtenhofer.github.io/" target="_blank"><br> Christoph Feichtenhofer<sup>&spades;</sup></a>, <a href="http://www.eecs.berkeley.edu/~malik/" target="_blank">Jitendra Malik</a>
-      
-    </span>
-    <span class="pull-right">
-      
-<div class="share-box" aria-hidden="true">
-  <ul class="share">
-    <li>
-      <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=https%3a%2f%2fkarttikeya.github.io%2fpublication%2frevvit%2f"
-         target="_blank">
-        <i class="fa fa-facebook"></i>
-      </a>
-    </li>
-    <li>
-      <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Reversible%20Vision%20Transformers&amp;url=https%3a%2f%2fkarttikeya.github.io%2fpublication%2frevvit%2f"
-         target="_blank">
-        <i class="fa fa-twitter"></i>
-      </a>
-    </li>
-    <li>
-      <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3a%2f%2fkarttikeya.github.io%2fpublication%2frevvit%2f&amp;title=Reversible%20Vision%20Transformers"
-         target="_blank">
-        <i class="fa fa-linkedin"></i>
-      </a>
-    </li>
-    <li>
-      <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=https%3a%2f%2fkarttikeya.github.io%2fpublication%2frevvit%2f&amp;title=Reversible%20Vision%20Transformers"
-         target="_blank">
-        <i class="fa fa-weibo"></i>
-      </a>
-    </li>
-    <li>
-      <a class="email"
-         href="mailto:?subject=Reversible%20Vision%20Transformers&amp;body=https%3a%2f%2fkarttikeya.github.io%2fpublication%2frevvit%2f">
-        <i class="fa fa-envelope"></i>
-      </a>
-    </li>
-  </ul>
-</div>
+     <tr>
+       <td align=center colspan="2" style="font-size:22px">
+       <center>
+       <sup>1</sup>UC Berkeley
+       </center>
+       </td>
+
+      <td align=center colspan="2" style="font-size:22px">
+      <center>
+      <sup>2</sup>Toyota Research Institute
+      </center>
+      </td>
+
+      <td align=center colspan="2" style="font-size:22px">
+      <center>
+      <sup>3</sup>Stanford University
+      </center>
+      </td>
+      </tr>
+    </table>
+
+        <br> <br>
+    <table align=center width=700px>
+       <tr>
+        <td align=center width=100px>
+        <center>
+        <span style="font-size:28px">ECCV 2020 <span style="color:red">(Oral)</span></span>
+        </center>
+        </td>
+     </tr>
+    </table>
+         <table align=center width=900>
+          <tr>
+                <br><br>
+                 <span style="font-size:28px">
+                <a href="https://arxiv.org/pdf/2004.02025.pdf">[Paper]</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                <a href="bibtex.txt">[Bibtex]</a> &nbsp; &nbsp; &nbsp; &nbsp; 
+                <a href="https://www.youtube.com/watch?v=XCWCHwGlBgE">[Short Talk]</a> &nbsp; &nbsp; &nbsp; &nbsp;
+                <a href="https://www.youtube.com/watch?v=cJt1lo3s08o">[Long Talk]</a> &nbsp; &nbsp; &nbsp; &nbsp; 
+                 <a href="https://github.com/HarshayuGirase/PECNet">[Github]</a> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+              </span>
+              <br>
+              <br>
+              <br>
+              <br>
+              <center><h1>Overview Video</h1></center>
+              <iframe width="900" height="660" src="https://www.youtube.com/embed/XCWCHwGlBgE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!-- [hosted on <a href="#">arXiv</a>]</a> -->
+              </td>
+        </tr>
+      </table>
+            <!--
+            <br>
+            <table align=center width=600px>
+                <tr>
+                    <td width=700px>
+                      <center>
+                          <img src = "teaser.jpg" height="180px"></img><br>
+                    </center>
+                    </td>
+                </tr>
+
+                <tr>
+                  <td colspan="3"> <br>
+                In the first image, can you predict what the human is going to do next? Depending on his intention, the person can choose to turn left to climb up stairs; he may also go straight through the hallway or turn right to fetch some items off the table. In this work, we propose a method to generate long-term stochastic predictions of future 3D human motion, while also considering the scene context.
+    Given one single RGB image and 2D human pose history, our method first generates multiple possible future 2D destinations, then predicts future 3D human paths towards each destination, as shown in the middle, and finally generates 3D human pose sequences following the path, shown in the ground-truth 3D point cloud of the scene in the right. We train our model on both real-world data with noisy ground-truth and our newly-created large-scale synthetic data with diverse scenes, characters, and motions. Both quantitative comparisons and qualitative results demonstrate that our method can generate plausible scene-adaptive predictions.
+                  </td>
+                </tr>
+            </table>
 
 
-    </span>
-  </div>
-
-</div>
-<div class="article-container">
-
-  
-
-  <h3>Abstract</h3>
-  <p class="pub-abstract" itemprop="text">We present Reversible Vision Transformers, a memory efficient architecture design for visual recognition. By decoupling the GPU memory requirement from the depth of the model, Reversible Vision Transformers enable scaling up architectures with efficient memory usage. We adapt two popular models, namely Vision Transformer and Multi-scale Vision Transformers, to reversible variants and benchmark extensively across both model sizes and tasks of image classification, object detection and video classification. Reversible Vision Transformers achieve a reduced memory footprint of up to 15.5× at roughly identical model complexity, parameters and accuracy, demonstrating the promise of reversible vision transformers as an efficient backbone for hardware resource limited training regimes. Finally, we find that the additional computational burden of recomputing activations is more than overcome for deeper models, where throughput can increase up to 2.3× over their non-reversible counterparts.</p>
-
-  
-  <div class="row">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-10">
-      <div class="row">
-        <div class="col-xs-12 col-sm-3 pub-row-heading">Type</div>
-        <div class="col-xs-12 col-sm-9">
+          <hr> -->
+<!--           <br>
+          <br> -->
+<!--           <center>
+            <table align=center width=700>
+                <tr>
+              
+                  <td><video width="700px" controls> <source src="hmp.m4v" type=video/mp4><video></td>
+              
+              </tr>
+            </table>
+          </center> -->
           
-          <a href="/publication/#1">
-            Conference proceedings
-          </a>
-          
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-1"></div>
-  </div>
-  <div class="visible-xs space-below"></div>
-  
+          <br>
 
-  <div class="row">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-10">
-      <div class="row">
-        <div class="col-xs-12 col-sm-3 pub-row-heading">Publication</div>
-        <div class="col-xs-12 col-sm-9">Under Review (Code and paper coming soon)</div>
-      </div>
-    </div>
-    <div class="col-sm-1"></div>
-  </div>
-  <div class="visible-xs space-below"></div>
+          <!-- <hr> -->
+          <center><h1>Abstract</h1></center>
+          <table align=center width=1000px>
+              <tr>
+                  <td width=1000px>
+<!--                     <center>
+                        <img src = "teaser.jpg" height="500px"></img><br>
+                  </center> -->
+                  <br>
+                  <span style="font-size:20px"> Human trajectory forecasting with multiple socially interacting agents is of critical importance for autonomous navigation in human
+environments, e.g., for self-driving cars and social robots. In this work, we
+present Predicted Endpoint Conditioned Network (PECNet) for flexible
+human trajectory prediction. PECNet infers distant trajectory endpoints
+to assist in long-range multi-modal trajectory prediction. A novel nonlocal social pooling layer enables PECNet to infer diverse yet socially compliant trajectories. Additionally, we present a simple “truncation trick” for improving few-shot multi-modal trajectory prediction performance. We show that PECNet improves state-of-the-art performance on the Stanford Drone prediction benchmark by ∼20.9% & on the ETH/UCY benchmark by ∼40.8%.
+                  </td>
+              </tr>
 
-  <div class="row">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-10">
-      <div class="row">
-        <div class="col-xs-12 col-sm-3 pub-row-heading">Date</div>
-        <div class="col-xs-12 col-sm-9" itemprop="datePublished">
-          January, 2022
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-1"></div>
-  </div>
-  <div class="visible-xs space-below"></div>
+              <tr>
+                <td colspan="3"> <br>
 
-  <div class="row" style="padding-top: 10px">
-    <div class="col-sm-1"></div>
-    <div class="col-sm-10">
-      <div class="row">
-        <div class="col-xs-12 col-sm-3 pub-row-heading" style="line-height:34px;">Links</div>
-        <div class="col-xs-12 col-sm-9">
-
-          
+                </td>
+              </tr>
+          </table>
 
 
+          <hr>
+          <center><h1>Key Ideas</h1></center>
+          <table align=center width=600px>
+              <tr>
+                  <td width=700px>
+                    <center>
+                        <img src = "teaser.JPG" height="500px"></img><br>
+                  </center>
+                  <br>
+                  <span style="font-size:18px"> <b>Imitating the Human Path Planning Process</b>: We posit that pedestrians in the scene move towards a predetermined position and interactions such as social signalling shape their trajectories only locally while they still go along achieving their original intention. Instantiating this idea, we propose 
+                  to model the pedestrian trajectory prediction problem (top left) by breaking down the task in two sequential steps that are learned end to end. (a) Inferring the local endpoint distribution (top right) for diverse endpoint sampling for each agent independently; and then (b) Conditioning on sampled future endpoints (bottom left) for planning socially compliant trajectories for all the agents in the scene jointly (bottom right).
+                  </td>
+              </tr>
+<!-- 
+We posit that pedestrians in the scene move towards a predetermined position and interactions such as social cues happen as they go along achieving this intention without changing the predilection while still shaping their trajectories locally. 
+               -->
+              <tr>
+                <td colspan="3"> <br>
+
+                </td>
+              </tr>
+          </table>
 
 
+        <hr>
+         <!-- <table align=center width=550px> -->
+                <center><h1>Multimodal Results</h1></center>
+                <table align=center width=900px>
+                    <tr>
+                        <td width=1200px colspan="3">
+                          <center>
+                              <img src = "multimodal.png" height="540px"></img><br>
+                        </center>
+                        </td>
+                    </tr>
+<!--                     <tr>
+                      <td align=center width=400px>
+                        (a)
+                      </td>
+                      <td align=center width=400px>
+                        (b)
+                      </td>
+                      <td align=center width=400px>
+                        (c)
+                      </td>
+                  </tr> -->
 
+                    <tr>
+                        <td width=600px colspan="3">
+                                            <br>
+                              <span style="font-size:18px"><b> Visualizing Multimodality Predictions:</b> Qualitative results for diverse multi-modal predictions produced by PECNet on the <a href="https://cvgl.stanford.edu/projects/uav_data/"> Stanford Drone Dataset</a>. White represents the past 3.2 seconds trajectory (8 frames) while  red  &  cyan  represents  predicted  &  ground  truth  future  respectively  over  next 4.8 seconds (12 frames). As demonstrated, PECNet predictions capture a wide-range of plausible trajectory behaviours while discarding improbable ones such as endpoints incompatible with the direction of motion. 
+                        </td>
+                    </tr>
+                </table>
+                <br>
+      <hr>
+      <table align=center width=800>
+       <center><h1>Socially Compliant Diverse Predictions</h1></center>
+          <tr class="spaceUnder">
+            <td>
+              <img style="width:280px" src="gt2.gif"/>
+            </td>
+            <td>
+              <img style="width:280px" src="pred2.gif"/>
+            </td>
+            <td>
+            <img style="width:280px" src="viz2.gif"/>
+          </td>
+        </tr>
 
+        <tr>
+          <td>
+            <img style="width:280px" src="gt3.gif"/>
+          </td>
+          <td>
+            <img style="width:280px" src="pred3.gif"/>
+          </td>
+          <td>
+            <img style="width:280px" src="viz3.gif"/>
+          </td>
+      </tr>
 
+        <tr>
+          <td align=center><br>
+            <span style="font-size:24px">&nbsp;<a href='#'>Ground Truth</a>
+          </td>
+          <td align=center><br>
+            <span style="font-size:24px">&nbsp;<a href='#'>Final Predictions</a>
+          </td>
+          <td align=center><br>
+            <span style="font-size:24px">&nbsp;<a href='#'>Multimodal Predictions</a>
+          </td>
+        <tr>
+        <tr>
+          <td colspan="3"> <br>
+            <span style="font-size:18px"><b> Qualitative Results at Mergers & Intersection:</b> We demonstrate PECNet's socially compliant & diverse trajectories in multi-agent settings in tricky scenarios such as path merger (top row) or collision avoidance at lane intersections (bottom row). The left column denotes the ground truth trajectories from Stanford Drone Dataset and the middle and left columns denote our predictions. For ground truth/final predictions, circles denote the past input fed into PECNet, while stars denote the future to be predicted/predicted with tails denoting the last four observed positions for both. Our "best" predictions follow the ground truth closely while effectively avoid collisions with other pedestrians in a natural seamless way. While PECNet's multimodal predictions produces diverse socially compliant trajectories jointly for all the pedestrians in the scene (extended temporally for visualization using recurrent prediction). For quantitative results please see <a href="https://arxiv.org/pdf/2004.02025.pdf">our paper</a>.  
+          </td>
+        </tr>
+      </table>
+    <br>
 
+    <hr>
+      <table align=center width=900>
+       <center><h1>Paper</h1></center>
+          <tr>
+            <td><a href="https://arxiv.org/pdf/2004.02025.pdf"><img align=center style="width:400px" src="paper_collage.png"/></a></td>
+            <td><span style="font-size:14pt">Mangalam, Girase, Agarwal, Lee, <br> Adeli, Malik, Gaidon.<br><br>
+              It Is Not the Journey but the Destination: Endpoint Conditioned Trajectory Prediction<br><br>
+            ECCV 2020  <a href = "https://eccv2020.eu/"> <b> (Oral) </b> </a><br><br>
+                <a href="https://arxiv.org/pdf/2004.02025.pdf">[Paper]</a> &nbsp; &nbsp;
+                <a href="bibtex.txt">[Bibtex]</a> &nbsp; &nbsp;
+                <a href="https://github.com/HarshayuGirase/PECNet">[Github]</a> 
+            <!-- [hosted on <a href="#">arXiv</a>]</a> -->
+              </td>
+        </tr>
+      </table>
+    <br>
+    <!--
+    <hr>
+      <center><h1>Code</h1></center>
+      <tr>
+        <td>
+          <span style="font-size:28px">&nbsp;<a href='#'>[GitHub]</a>  (coming soon)
+        </td>
+      <br>
+      -->
+      <hr>
+            <table align=center width=950px>
+                <tr>
+                    <td>
+                      <left>
+                <center><h1>Acknowledgements</h1></center>
+                We thank <span style="font-size:14px"><a href="http://www.niebles.net/">Prof. Juan Carlos Niebles</a></span> for helpful advice and suggestions. This webpage template was borrowed from some <a href="https://richzhang.github.io/colorization/">colorful folks</a>.
+            </left>
+        </td>
+        </tr>
+        </table>
 
-
-
-
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-1"></div>
-  </div>
-  <div class="visible-xs space-below"></div>
-
-  <div class="space-below"></div>
-
-  <div class="article-style"></div>
-
-</div>
-
-<div class="container">
-  <nav>
-  <ul class="pager">
-    
-    <li class="previous"><a href="https://karttikeya.github.io/publication/memvit/"><span
-      aria-hidden="true">&larr;</span> MeMViT: Memory-Augmented Multiscale Vision Transformer for Efficient Long-Term Video Recognition</a></li>
-    
-
-    
-  </ul>
-</nav>
-
-</div>
-
-<footer class="site-footer">
-  <div class="container">
-    <p class="powered-by">
-
-      &copy; 2022 Karttikeya Mangalam &middot; 
-
-      Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
-      theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
-
-      <span class="pull-right" aria-hidden="true">
-        <a href="#" id="back_to_top">
-          <span class="button_icon">
-            <i class="fa fa-chevron-up fa-2x"></i>
-          </span>
-        </a>
-      </span>
-
-    </p>
-  </div>
-</footer>
-
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.2/imagesloaded.pkgd.min.js" integrity="sha512-iHzEu7GbSc705hE2skyH6/AlTpOfBmkx7nUqTLGzPYR+C1tRaItbRlJ7hT/D3YQ9SV0fqLKzp4XY9wKulTBGTw==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js" integrity="sha512-Z5heTz36xTemt1TbtbfXtTq5lMfYnOkXM2/eWcTTiLU01+Sw4ku1i7vScDc8fWhrP2abz9GQzgKH5NGBLoYlAw==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js" integrity="sha512-CDeU7pRtkPX6XJtF/gcFWlEwyaX7mcAp5sO3VIu/ylsdR74wEw4wmBpD5yYTrmMAiAboi9thyBUr1vXRPA7t0Q==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
-    
-    <script src="/js/hugo-academic.js"></script>
-    
-
-    
-    
-      
-      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
-
-      
-
-      
-
-      <script>hljs.initHighlightingOnLoad();</script>
-    
-
-    
-    
-
-  </body>
+        <br><br>
+</body>
 </html>
-
