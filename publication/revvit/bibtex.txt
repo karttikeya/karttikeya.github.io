@@ -1,6 +1,7 @@
-@article{mangalam2020not,
-  title={It Is Not the Journey but the Destination: Endpoint Conditioned Trajectory Prediction},
-  author={Mangalam, Karttikeya and Girase, Harshayu and Agarwal, Shreyas and Lee, Kuan-Hui and Adeli, Ehsan and Malik, Jitendra and Gaidon, Adrien},
-  journal={arXiv preprint arXiv:2004.02025},
-  year={2020}
+@inproceedings{mangalam2022reversible,
+  title={Reversible Vision Transformers},
+  author={Mangalam, Karttikeya and Fan, Haoqi and Li, Yanghao and Wu, Chao-Yuan and Xiong, Bo and Feichtenhofer, Christoph and Malik, Jitendra},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={10830--10840},
+  year={2022}
 }
