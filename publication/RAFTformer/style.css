@@ -1,0 +1,107 @@
+:root {
+  color-scheme: dark;
+}
+
+header {
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Google Sans', sans-serif;
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.headline {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+p {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.btn-dropdown {
+  font-family: 'Google Sans', sans-serif;
+  font-size: 1.7rem;
+  font-weight: 600;
+  box-shadow: none;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.375rem 0.75rem;
+  color: #f8f9fa;
+}
+
+.btn-dropdown:hover, .btn-dropdown:focus {
+  text-decoration: none;
+  color: #f8f9fa;
+}
+
+.custom-text {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.authors {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 1.35em;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.insts {
+  font-size: 1.1em;
+  justify-content: center;
+  display: flex;
+}
+
+.custom-rounded {
+  border-radius: 0.8rem;
+}
+
+.bibtex {
+  background-color: #f5f5f5;
+  color: #4a4a4a;
+  font-family: monospace;
+  font-size: .8em;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.fa-caret-down{
+  transform: rotate(0deg);
+  transition: transform .3s linear;
+}
+
+.fa-caret-down.open{
+  transform: rotate(-90deg);
+  transition: transform .3s linear;
+}
+
+.dark-bg {
+  background-color: #202124;
+}
+
+.custom-light {
+  color: #d9d9d9;
+}
+
+.accent-color {
+  color: #cf6679;
+}
